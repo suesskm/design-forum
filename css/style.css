@@ -1,0 +1,289 @@
+body{
+    margin:0;
+    background-image: url("media/images/gradient.png");
+}
+canvas{
+    display:block;
+}
+
+
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #000000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+.hidden {
+    display: none;
+}
+
+#three-body{
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    /* z-index: 1; */
+}
+
+
+
+
+#custom-cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url('../media/images/noun-cursor-1010278.png');
+    background-size: cover;
+    pointer-events: none;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+   
+    
+
+    flex-direction:column;
+}
+
+.flexbox{
+    display: flex;
+/* margin-top:40px; */
+    align-items: right;
+    height:10vh;
+    width:50vw;
+}
+
+#hello{
+    position:absolute;
+    color: black;
+    font-family: "Noto Serif Display", serif;
+    font-size: 200px;
+    line-height: 85%;
+    letter-spacing: .6rem;
+    justify-content: right;
+    margin-top:150px;
+    padding-left: 200px;
+}
+
+
+
+
+
+h2{
+    color: black;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-size: 36px;
+    justify-content: center;
+    letter-spacing: .1rem;
+    margin-top:-50px;
+
+}
+
+h3{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: -20px;
+    letter-spacing: .1rem;
+    font-style: italic;
+}
+
+.flex-container1{
+    display:flex;
+    height:0vh;
+    width:100vw;
+    padding-left:10px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    
+}
+
+.flex-container2{
+    display:flex;
+    height: auto;
+    width:100vw;
+    padding-left:10px;
+    padding-right:10px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    /* margin-top:0px; */
+}
+
+
+
+
+
+#home{
+    justify-content: center;
+     margin-top: 10px;
+    letter-spacing: .1rem;
+}
+
+   .icon {
+    display:flex;
+    margin-left: 5px;
+    animation: colorChange 2s infinite; /* Add the animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 12px;
+   margin-top: -5px;
+   text-align: center;
+   transition: 0.3s;
+   
+    }
+
+
+@keyframes colorChange {
+    0% {
+        color: initial; /* Start with initial color */
+    }
+
+    25%{
+        color: #81c2ab; /* Change to desired color a quarter of the way through */}
+    50% {
+        color: #9c4a70; /* Change to desired color halfway through */
+
+    }
+    100% {
+        color: initial; /* Change back to initial color */
+    }
+}
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+font-size: 12px;
+margin-top: -5px;
+text-align: center;
+height: 50%;
+width: 50%;
+}
+
+/* The actual popup (appears on top) */
+ .popup .popuptext {
+  visibility: hidden;
+  width: 100px;
+  height:300px;
+  /* background-color: #555; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -200px;
+  box-shadow: #9c4a70;
+}  
+
+#popup-03{
+    margin-top: 600px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn .5s;
+  animation: fadeIn .5s
+  
+  
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+#about{
+    justify-content: center;
+     margin-top: 10px;
+     margin-left:775px;
+    letter-spacing: .1rem;
+
+}
+
+#blog{
+    justify-content: center;
+     /* margin-top: 10px; */
+    letter-spacing: .1rem; 
+    margin-left: 10px; 
+}
+#contact{
+    justify-content: center;
+     margin-top: 0px;
+     margin-left:1300px;
+    letter-spacing: .1rem;
+}
+
+.flex-container7{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    background: rgb(247,135,100);
+background: linear-gradient(rgba(247,135,100,1) 0%, rgba(237,108,68,1) 35%, rgba(226,72,23,1) 100%);;
+}
+
+.info{
+    /* transform: rotate(10deg); */
+    /* background-color: blueviolet; */
+    width:700px;
+    height: 400px;
+    margin-left: 700px;
+    justify-content: center;
+    font-family: koulen, sans-serif;
+    font-size: 52px;
+    color: #083D77; 
+    letter-spacing: .2rem;
+    line-height:90%;
+}
+#text1{
+    font-size:80px;
+    line-height:95%;
+    font-family: koulen , sans-serif;
+    color:#EBEBD3;
+}
+
