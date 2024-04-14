@@ -125,10 +125,10 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('media/models/quantum_orb.glb', function(gltf){
+gltfLoader.load('models/slithering_chromatubes.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(3,5,2);
-    orb.position.set(-3,-1,-2);
+    orb.scale.set(10,8,5);
+    orb.position.set(-3,-10,-2);
      scene.add(orb);
 
 
