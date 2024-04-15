@@ -128,7 +128,7 @@ const gltfLoader = new GLTFLoader();
 gltfLoader.load('models/slithering_chromatubes.glb', function(gltf){
     orb = gltf.scene;
     orb.scale.set(10,8,5);
-    orb.position.set(-3,-10,-2);
+    orb.position.set(-8,-10,-2);
      scene.add(orb);
 
 
@@ -139,6 +139,8 @@ gltfLoader.load('models/slithering_chromatubes.glb', function(gltf){
     orb_anim = gltf.animations[0]; //first animation
     mixerOrb.clipAction( orb_anim ).play();
 });
+
+
 
 
 //----------------- OBJECT ROTATION WITH MOUSE MOVE -----------------

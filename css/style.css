@@ -105,7 +105,9 @@ h3{
     margin-top: -20px;
     letter-spacing: .1rem;
     font-style: italic;
-}
+} 
+
+
 
 .flex-container1{
     display:flex;
@@ -189,6 +191,7 @@ margin-top: -5px;
 text-align: center;
 height: 50%;
 width: 50%;
+box-shadow: #81c2ab;
 }
 
 /* The actual popup (appears on top) */
@@ -219,7 +222,6 @@ width: 50%;
   visibility: visible;
   -webkit-animation: fadeIn .5s;
   animation: fadeIn .5s
-  
   
 }
 
