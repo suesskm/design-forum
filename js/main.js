@@ -125,11 +125,11 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('../models/tubular_twists.glb', function(gltf){
+gltfLoader.load('../models/icosub_2.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(2,2,2);
-    orb.position.set(-8,2,-2);
-    //  scene.add(orb);
+    orb.scale.set(5,5,5);
+    orb.position.set(-2,2,-2);
+     scene.add(orb);
 
 
 
@@ -266,13 +266,7 @@ var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
 light2.position.set(0,5,5);
 scene.add(light5);
 
-var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
-light2.position.set(0,5,5);
-scene.add(light5);
 
-var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
-light2.position.set(0,5,5);
-scene.add(light5);
 
 
 
@@ -319,16 +313,18 @@ function animate(){
     pink.rotation.y += 0.08;
     pink.rotation.x += 0.08;
 
+    orb.rotation.x += 0.02;
 
-    // if(orb.position.x < -2){
-    //     orb.rotation.y = THREE.MathUtils.degToRad(180);
-    //     orb.position.x += 0.200;
-    // }
 
-    // if(orb.position.x > -12){
-    //     // orb.rotation.y = THREE.MathUtils.degToRad(180);
-    //     orb.position.x -= 0.200;
-    // }
+    if(orb.position.x < -2){
+        orb.rotation.y = THREE.MathUtils.degToRad(180);
+        orb.position.x += 0.100;
+    }
+
+    if(orb.position.x > -12){
+        orb.rotation.y = THREE.MathUtils.degToRad(180);
+        orb.position.x -= 0.100;
+    }
 
     renderer.render(scene,camera);
 }

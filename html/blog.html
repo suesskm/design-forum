@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>design forum</title>
-   <link rel="stylesheet" href="css/style.css">
+    <title>blog</title>
+   <link rel="stylesheet" href="../css/blog.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,6 +29,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Major+Mono+Display&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Major+Mono+Display&family=Rubik+Mono+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
 
    <script type="importmap">
@@ -42,112 +54,46 @@
 
 </head>
 <body>
-   <div id="loader" class="loader"></div>
-  <style>
-    body {
-      background-image: url('media/images/gradient-grain.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    </style>
 
-
- 
- <div class="flex-container1">
-  <div id="home">home</div> 
-
-  <div class="icon">
-    <img src="media/images/icons-16.png">
-    <div class="popup" onclick="showPopup('popup-05')">blog
-        <span class="popuptext" id="popup-05">
-            <img src="media/images/popup-05.png" alt="Popup Image">
-        </span>
-    </div>
-</div>
-
-<div class="icon">
-    <img src="media/images/icons-17.png">
-    <div class="popup" onclick="showPopup('popup-06')">notes
-        <span class="popuptext" id="popup-06">
-            <img src="media/images/popup-06.png" alt="Popup Image">
-        </span>
-    </div>
-</div>
-
-<div class="icon">
-    <img src="media/images/icons-15.png">
-    <div class="popup" onclick="showPopup('popup-03')">events
-        <span class="popuptext" id="popup-03">
-            <img src="media/images/events.png" alt="Popup Image">
-        </span>
-    </div>
-</div> 
+  <div class="flex-container3">
+    <a href="../html/archive.html" id="archive">archive</a>
   
-  <div class="icon">
-      <img src="media/images/icons-18.png">
-     <div class="popup" onclick="showPopup('popup-04')">archive
-        <span class="popuptext" id="popup-04">
-             <img src="media/images/archive.png" alt="Popup Image"
-        </span>
-      </div> 
-      </div> 
- 
- 
-      <div class="icon">
-        <img src="media/images/icons-19.png">
-        <div class="popup" onclick="showPopup()">connect
-          <span class="popuptext" id="myPopup">
-              <img src="media/images/popup1.png" alt="Popup Image">
-          </span></div>
-        </div> 
-
-   
-
-
-  <div id="about">links</div>
+    <a href="../html/about.html" id="about">about</a>
+  
+    <a href="../html/blog.html" id="blog">blog</a>
+  
+    
   </div>
-
-
+   
+  <div class="parent-container">
     <div class="flex-container">
-   
-      <div class="flexbox">
-    <h1 id="hello">DESIGN FORUM.</h1>
-   </div>
-    <div id="three-body"></div> 
-
-    
-   
-    <h2>a graphic design community</h2>
-    <h3>for designers, by designers</h3>
- 
-
-
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
     <div class="flex-container2">
-      <div id="blog">about</div>
-      <div id="contact">contact</div>
-
-      </div>
-
-
-
-
-      <script>
-        // When the user clicks on <div>, open the popup
-          function showPopup(popupId) {
-            var popup = document.getElementById(popupId);
-            popup.classList.toggle("show");
-        }
-
-        src = "grained.js"
+        <div class="flex-item">Item A</div>
+        <div class="flex-item">Item B</div>
+        <div class="flex-item">Item C</div>
+    </div>
+</div>
 
 
-        </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
     
-    <script src="js/script.js" type="module"></script>
-    <script src="js/main.js" type="module"></script>
+    <!-- <script src="../js/script.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script> -->
 </body>
 </html>
