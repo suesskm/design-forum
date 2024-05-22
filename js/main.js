@@ -7,7 +7,7 @@ import { getFirstObjectWithName } from './RayCastHelper.js';
 
 
 var width = window.innerWidth*1.2;
-var height = window.innerHeight*1;
+var height = window.innerHeight*1.2;
 
 // loader
 
@@ -63,7 +63,7 @@ const greenMaterial = new THREE.MeshBasicMaterial({map: greenTexture});
 
 const greenGeometry = new THREE.SphereGeometry(1,32,32);
 const green = new THREE.Mesh(greenGeometry, greenMaterial);
-scene.add(green);
+// scene.add(green);
 
 green.position.set(10,-4,-2);
 green.scale.set(1,1,1);
@@ -78,7 +78,7 @@ const purpleMaterial = new THREE.MeshBasicMaterial({map: purpleTexture});
 
 const purpleGeometry = new THREE.SphereGeometry(1,32,32);
 const purple = new THREE.Mesh(purpleGeometry, purpleMaterial);
-scene.add(purple);
+// scene.add(purple);
 
 purple.name="purple";
 purple.position.set(-10,4,-10);
@@ -96,7 +96,7 @@ const yellowMaterial = new THREE.MeshBasicMaterial({map: yellowTexture});
 
 const yellowGeometry = new THREE.SphereGeometry(1,32,32);
 const yellow = new THREE.Mesh(yellowGeometry, yellowMaterial);
-scene.add(yellow);
+// scene.add(yellow);
 
 yellow.position.set(-5,6,5);
 yellow.scale.set(1,1,1);
@@ -111,7 +111,7 @@ const pinkMaterial = new THREE.MeshBasicMaterial({map: pinkTexture});
 
 const pinkGeometry = new THREE.SphereGeometry(1,32,32);
 const pink = new THREE.Mesh(pinkGeometry, pinkMaterial);
-scene.add(pink);
+// scene.add(pink);
 pink.name = "pink";
 pink.position.set(1,4,1);
 pink.scale.set(1,1,1);
@@ -125,11 +125,11 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('models/slithering_chromatubes.glb', function(gltf){
+gltfLoader.load('../models/tubular_twists.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(10,8,5);
-    orb.position.set(-8,-10,-2);
-     scene.add(orb);
+    orb.scale.set(2,2,2);
+    orb.position.set(-8,2,-2);
+    //  scene.add(orb);
 
 
 
@@ -139,6 +139,8 @@ gltfLoader.load('models/slithering_chromatubes.glb', function(gltf){
     orb_anim = gltf.animations[0]; //first animation
     mixerOrb.clipAction( orb_anim ).play();
 });
+
+
 
 
 
@@ -255,6 +257,18 @@ scene.add(light3);
 var light4 = new THREE.PointLight(0x69a9dc,lightSize,2000)
 light2.position.set(-5,5,0);
 scene.add(light4);
+
+var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
+light2.position.set(0,5,5);
+scene.add(light5);
+
+var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
+light2.position.set(0,5,5);
+scene.add(light5);
+
+var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
+light2.position.set(0,5,5);
+scene.add(light5);
 
 var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
 light2.position.set(0,5,5);
