@@ -311,7 +311,7 @@ function animate(){
     yellow.rotation.y += 0.08;
     yellow.rotation.x += 0.08;
     pink.rotation.y += 0.08;
-    pink.rotation.x += 0.08;
+    // pink.rotation.x += 0.08;
 
     
 
