@@ -316,15 +316,15 @@ function animate(){
     
 
 
-    if(orb.position.x < -2){
-        orb.rotation.y = THREE.MathUtils.degToRad(180);
-        orb.position.x += 0.100;
-    }
+    // if(orb.position.x < -2){
+    //     orb.rotation.y = THREE.MathUtils.degToRad(180);
+    //     orb.position.x += 0.100;
+    // }
 
-    if(orb.position.x > -12){
-        orb.rotation.y = THREE.MathUtils.degToRad(180);
-        orb.position.x -= 0.100;
-    }
+    // if(orb.position.x > -12){
+    //     orb.rotation.y = THREE.MathUtils.degToRad(180);
+    //     orb.position.x -= 0.100;
+    // }
 
     renderer.render(scene,camera);
 }
