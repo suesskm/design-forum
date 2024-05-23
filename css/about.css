@@ -1,5 +1,12 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 canvas{
-    display:block;
+    display: block;
 }
 
 #three-body{
@@ -13,15 +20,13 @@ h1{
     color: plum;
 }
 
-
 a{
     text-decoration: none;
     color: black;
-
 }
 
 a:hover{
-color: yellow;
+    color: yellow;
 }
 
 #archive{
@@ -32,7 +37,6 @@ color: yellow;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: rgb(255, 255, 255);
-
 }
 
 #archive:hover{
@@ -76,7 +80,37 @@ color: yellow;
     background-color: rgb(240, 25, 104);
     font-family: "Raleway", sans-serif;
     border-radius: 10px 10px 10px 10px;
-   
-  
+}
 
+.parent-container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 90vh;
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: magenta;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: lightgreen;
+}
+
+.flex-item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid navy;
 }

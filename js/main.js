@@ -313,7 +313,7 @@ function animate(){
     pink.rotation.y += 0.08;
     pink.rotation.x += 0.08;
 
-    orb.rotation.x += 0.02;
+    
 
 
     if(orb.position.x < -2){
