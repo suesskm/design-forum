@@ -106,7 +106,7 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('../models/icosub_2.glb', function(gltf){
+gltfLoader.load('models/icosub_2.glb', function(gltf){
     orb = gltf.scene;
     orb.scale.set(5,5,5);
     orb.position.set(-2,2,-2);
