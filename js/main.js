@@ -9,25 +9,6 @@ import { getFirstObjectWithName } from './RayCastHelper.js';
 var width = window.innerWidth*1.2;
 var height = window.innerHeight*1.2;
 
-// loader
-
-document.addEventListener("DOMContentLoaded", () => {
-    // Simulate an API request or any async operation
-    setTimeout(() => {
-        hideLoader();
-        showContent();
-    }, 3000); // Replace with your actual data loading logic and time
-
-    function hideLoader() {
-        const loader = document.getElementById("loader");
-        loader.style.display = "none";
-    }
-
-    function showContent() {
-        const content = document.getElementById("content");
-       
-    }
-});
 
 
 // 1: Set up the scene

@@ -1,7 +1,4 @@
-body{
-    margin:0;
-    background-image: url("media/images/gradient.png");
-}
+
 canvas{
     display:block;
 }
