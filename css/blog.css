@@ -72,6 +72,22 @@ a:hover{
     color: yellow;
 }
 
+#home{
+    position: absolute;
+    top: 100;
+    left: 0;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
+
+#home:hover{
+    color: yellow;
+
+}
+
 .flex-container3{
     display: flex;
     flex-direction: row;
@@ -86,21 +102,23 @@ a:hover{
     display: flex;
     flex-wrap: nowrap;
     height: 90vh;
-    margin-top: 50px;
+    
 }
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
     height: 100%;
-    width: 40%;
-    background-color: magenta;
+    width: 60%;
+    background-color: rgb(243, 221, 243);
 }
 
 .flex-container2 {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     height: 100%;
     width: 40%;
@@ -111,6 +129,19 @@ a:hover{
     background-color: lightblue;
     padding: 20px;
     margin: 10px;
-    text-align: center;
+    text-align: left;
     border: 2px solid yellow;
+}
+
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    border: 2px solid yellow;
+}
+
+#title{
+    font-family:"Pinyon Script", sans-serif;
+    font-size: 180px;
 }

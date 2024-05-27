@@ -1,12 +1,6 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 canvas{
-    display: block;
+    display:block;
 }
 
 #three-body{
@@ -16,17 +10,22 @@ canvas{
     /* z-index: 1; */
 }
 
-h1{
-    color: plum;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+
 
 a{
     text-decoration: none;
     color: black;
+
 }
 
 a:hover{
-    color: yellow;
+color: yellow;
 }
 
 #archive{
@@ -37,6 +36,7 @@ a:hover{
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     color: rgb(255, 255, 255);
+
 }
 
 #archive:hover{
@@ -72,6 +72,82 @@ a:hover{
     color: yellow;
 }
 
+
+.flexbox{
+width: 100%;
+height: 100vh;
+
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height:30vh;
+    width:100%;
+    margin-top: auto;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+
+#hello{
+    position:absolute;
+    color: black;
+    font-family: "Syncopate", sans-serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 85%;
+    letter-spacing: .6rem;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute
+
+}
+
+
+
+
+
+h2{
+    color: black;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-size: 36px;
+    justify-content: center;
+    letter-spacing: .1rem;
+    margin-top:-150px;
+    padding-left: 440px;
+    display: center;
+    /* position: absolute; */
+    
+  
+
+}
+
+h2:hover{
+    color: yellow;
+}
+
+
+
+h4{
+  position: absolute;
+  font-family: "Jacquarda Bastarda 9", sans-serif;
+    font-size: 20px;
+    color: rgb(105, 78, 162);
+    
+
+
+}
+
+.flex-container2{
+    display: column;
+    flex-direction: row;
+    margin-top: -150px;
+}
+
 .flex-container3{
     display: flex;
     flex-direction: row;
@@ -80,37 +156,26 @@ a:hover{
     background-color: rgb(240, 25, 104);
     font-family: "Raleway", sans-serif;
     border-radius: 10px 10px 10px 10px;
+    
+   
+
 }
 
-.parent-container {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 90vh;
-    margin-top: 50px;
-}
 
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 100%;
-    width: 40%;
-    background-color: magenta;
-}
 
-.flex-container2 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 100%;
-    width: 40%;
-    background-color: lightgreen;
-}
 
-.flex-item {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border: 2px solid navy;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

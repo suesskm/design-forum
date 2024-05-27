@@ -294,7 +294,7 @@ function animate(){
     pink.rotation.y += 0.08;
     // pink.rotation.x += 0.08;
 
-    orb.rotation.y += 0.02;
+    
 
     
 

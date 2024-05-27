@@ -10,6 +10,11 @@ canvas{
     /* z-index: 1; */
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 
 
@@ -112,9 +117,10 @@ h2{
     font-size: 36px;
     justify-content: center;
     letter-spacing: .1rem;
-    margin-top:-100px;
+    margin-top:-150px;
     padding-left: 440px;
     display: center;
+    /* position: absolute; */
     
   
 
@@ -124,17 +130,7 @@ h2:hover{
     color: yellow;
 }
 
-h3{
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    justify-content: center;
-    margin-top: -20px;
-    letter-spacing: .1rem;
-    font-style: italic;
-    padding-left: 600px;
 
-} 
 
 h4{
   position: absolute;
@@ -160,8 +156,8 @@ h4{
     background-color: rgb(240, 25, 104);
     font-family: "Raleway", sans-serif;
     border-radius: 10px 10px 10px 10px;
+    
    
-  
 
 }
 
