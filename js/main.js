@@ -108,8 +108,8 @@ var orb_anim;  //animation FLY
 const gltfLoader = new GLTFLoader();
 gltfLoader.load('models/icosub_2.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(5,5,5);
-    orb.position.set(-2,2,-2);
+    orb.scale.set(6,6,6);
+    orb.position.set(-1.5,2,-2);
      scene.add(orb);
 
 
@@ -121,6 +121,20 @@ gltfLoader.load('models/icosub_2.glb', function(gltf){
     mixerOrb.clipAction( orb_anim ).play();
 });
 
+// Add new model
+var newModel;
+var mixerNewModel;
+var newModel_anim;
+gltfLoader.load('models/dandelion.glb', function (gltf) {
+    newModel = gltf.scene;
+    newModel.scale.set(.1, .1,.1);
+    newModel.position.set(7, 3, -5);
+    scene.add(newModel);
+
+    mixerNewModel = new THREE.AnimationMixer(newModel);
+    newModel_anim = gltf.animations[0];
+    mixerNewModel.clipAction(newModel_anim).play();
+});
 
 
 
@@ -177,7 +191,7 @@ function moveObj(event) {
     raycaster.ray.intersectPlane(plane, intersectionPoint);
     intersectionPoint.z = -2;
     // Update the cube's position to match the intersection point
-    green.position.copy(intersectionPoint);
+    newModel.position.copy(intersectionPoint);
 }
 
 // Add event listener for mouse movement
@@ -188,7 +202,7 @@ document.addEventListener('mousemove', onMouseMove, false);
 document.addEventListener('click', onObjectClick);
 
 function onObjectClick(event){
-    const object = getFirstObjectWithName(event, window, camera, scene, "green");
+    const object = getFirstObjectWithName(event, window, camera, scene, "newModel");
     if(object !== null){
         //add any action you want to perform when the object is clicked
         // pink.material.color.set("#30ff49");
