@@ -105,13 +105,80 @@ height: 100vh;
 
 }
 
+#square {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top: 300px;
+    margin-left:600px;
+    animation: blink 1s linear infinite;
+  }
 
+  #square1{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top: 350px;
+    margin-left:650px;
+    animation: blink 2s linear infinite;
+  }
+
+  #square2{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top: 450px;
+    margin-left:350px;
+    animation: blink 2s linear infinite;
+  }
+
+  #square3{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top:450px;
+    margin-right: 700px;
+    animation: blink 2s linear infinite;
+  }
+
+
+  #square4{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top:350px;
+    margin-right: 550px;
+    animation: blink 2s linear infinite;
+  }
+    
+
+
+  #square5{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top:400px;
+    margin-right: 800px;
+    animation: blink 2s linear infinite;
+  }
+  @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+    
 
 
 
 h2{
     color: red;
-    font-family: "Pinyon Script", serif;
+    font-family: "Pinyon Script", san-serif;
     font-size: 64px;
     display: flex;
     justify-content: center;
@@ -123,26 +190,16 @@ h2{
 
 }
 
-
-
-
-.flex-container2{
-    display: column;
-    flex-direction: row;
-    margin-top: -150px;
-}
-
-.flex-container3{
+h3{
+    color: red;
+    font-family: "Pinyon Script", serif;
+    font-size: 24px;
     display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    /* background-color: rgb(240, 25, 104); */
-    font-family: "Raleway", sans-serif;
-    border-radius: 10px 10px 10px 10px;
-    
-   
-
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 500px;
 }
 
 
