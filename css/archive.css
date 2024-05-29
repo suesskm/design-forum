@@ -93,17 +93,15 @@ height: 100vh;
 
 
 #hello{
-    position:absolute;
-    color: black;
-    font-family: "Syncopate", sans-serif;
+    position: absolute;
+    color: red;
+    font-family: "Pinyon Script", sans-serif;
     font-style: bold;
     font-weight: 400;
     font-size: 130px;
-    line-height: 85%;
-    letter-spacing: .6rem;
     justify-content: center;
-    margin-top: 80px;
-    position: absolute
+    margin-top: 100px;
+    
 
 }
 
@@ -112,35 +110,21 @@ height: 100vh;
 
 
 h2{
-    color: black;
-    font-family: "Jacquarda Bastarda 9", serif;
-    font-size: 36px;
+    color: red;
+    font-family: "Pinyon Script", serif;
+    font-size: 64px;
+    display: flex;
     justify-content: center;
-    letter-spacing: .1rem;
-    margin-top:-150px;
-    padding-left: 440px;
-    display: center;
-    /* position: absolute; */
+   
+    margin-right: auto;
+    position: absolute;
     
   
 
 }
 
-h2:hover{
-    color: yellow;
-}
 
 
-
-h4{
-  position: absolute;
-  font-family: "Jacquarda Bastarda 9", sans-serif;
-    font-size: 20px;
-    color: rgb(105, 78, 162);
-    
-
-
-}
 
 .flex-container2{
     display: column;
@@ -153,7 +137,7 @@ h4{
     flex-direction: row;
     height: 5vh;
     width: 100vw;
-    background-color: rgb(240, 25, 104);
+    /* background-color: rgb(240, 25, 104); */
     font-family: "Raleway", sans-serif;
     border-radius: 10px 10px 10px 10px;
     
