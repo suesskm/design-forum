@@ -17,6 +17,15 @@ body, html {
 }
 
 
+.flex-container3{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 100vw;
+    font-family: "Raleway", sans-serif;
+    border-radius: 10px 10px 10px 10px;
+}
+
 
 a{
     text-decoration: none;
