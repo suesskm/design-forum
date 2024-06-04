@@ -19,7 +19,7 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
 camera.position.x =-5;
 camera.position.y = 3;
-camera.position.z = 10;
+camera.position.z = 50;
 
 
 
@@ -108,9 +108,9 @@ var orb_anim;  //animation FLY
 const gltfLoader = new GLTFLoader();
 gltfLoader.load('models/icosub_2.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(6,6,6);
+    orb.scale.set(1,1,1);
     orb.position.set(-1.5,2,-2);
-     scene.add(orb);
+    //  scene.add(orb);
 
 
 
@@ -125,7 +125,7 @@ gltfLoader.load('models/icosub_2.glb', function(gltf){
 var newModel;
 var mixerNewModel;
 var newModel_anim;
-gltfLoader.load('models/dandelion.glb', function (gltf) {
+gltfLoader.load('models/heart_in_love.glb', function (gltf) {
     newModel = gltf.scene;
     newModel.scale.set(.1, .1,.1);
     newModel.position.set(7, 3, -5);

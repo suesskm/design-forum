@@ -16,9 +16,7 @@ canvas{
     /* z-index: 1; */
 }
 
-h1{
-    color: plum;
-}
+
 
 a{
     text-decoration: none;
@@ -34,13 +32,14 @@ a:hover{
     top: 0;
     right: 0;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "IBM Plex Mono", static;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
 }
 
 #archive:hover{
-    color: yellow;
+    color: red;
 }
 
 #blog{
@@ -48,13 +47,14 @@ a:hover{
     top: 0;
     left: 0;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "IBM Plex Mono", static;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
 }
 
 #blog:hover{
-    color: yellow;
+    color: red;
 }
 
 #about{
@@ -62,14 +62,15 @@ a:hover{
     top: 0;
     left: 50%;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "IBM Plex Mono", static;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: black;
     transform: translateX(-50%);
+    border: 2px solid black;
 }
 
 #about:hover{
-    color: yellow;
+    color: red;
 }
 
 #home{
@@ -77,9 +78,10 @@ a:hover{
     top: 100;
     left: 0;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "IBM Plex Mono", static;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
 
 }
 
@@ -88,14 +90,42 @@ a:hover{
 
 }
 
+#hello{
+    font-family: "Raleway", san-serif;
+    font-size: 100px;
+}
+
+#title{
+    font-family: "IBM Plex Mono", static;
+    font-size: 120px;
+}
+
+h1{
+    font-family: "Jacquarda Bastarda 9", san-serif;
+    font-size: 20px;
+    color: red;
+ 
+    
+}
+
+h2{
+    font-family: "Courier New", san serif;
+    font-size: 19px;
+}
+
+p{
+    font-family: "Courier New", san-serif;
+    font-size: 13px;
+}
+
 .flex-container3{
     display: flex;
     flex-direction: row;
     height: 5vh;
     width: 100vw;
-    background-color: rgb(240, 25, 104);
     font-family: "Raleway", sans-serif;
     border-radius: 10px 10px 10px 10px;
+    
 }
 
 .parent-container {
@@ -112,7 +142,7 @@ a:hover{
     flex-direction: column;
     height: 100%;
     width: 60%;
-    background-color: rgb(243, 221, 243);
+   
 }
 
 .flex-container2 {
@@ -122,26 +152,23 @@ a:hover{
     align-items: center;
     height: 100%;
     width: 40%;
-    background-color: lightgreen;
+   
 }
 
 .flex-item {
-    background-color: lightblue;
+   
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     text-align: left;
-    border: 2px solid yellow;
+    border: 2px solid black;
+    margin-right: 20px;
 }
 
 .header {
-    background-color: lightblue;
     padding: 20px;
     margin: 10px;
-    text-align: left;
-    border: 2px solid yellow;
+    justify-content: center;
+    align-items: center;
+   
 }
 
-#title{
-    font-family:"Pinyon Script", sans-serif;
-    font-size: 180px;
-}
