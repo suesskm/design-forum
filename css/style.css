@@ -159,3 +159,9 @@ h2{
     height: 40vh;
     background-color: yellow;
 }
+
+#clouds{
+    width: 2px;
+    height: 4px;
+    position: absolute;
+}
