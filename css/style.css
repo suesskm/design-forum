@@ -10,8 +10,8 @@ canvas{
 }
 
 #three-body{
-    width: 100%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     /* z-index: 1; */
 }
@@ -27,56 +27,67 @@ a:hover{
     color: yellow;
 }
 
+#three-body{
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
 #archive{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 0;
+    font-family: "UnifrakturMaguntia", static;
+    font-size: 20px;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    color: black;
+    color: orange;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 #archive:hover{
-    color: red;
+    color: hotpink;
 }
 
 #blog{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    color: black;
+    font-family: "UnifrakturMaguntia", static;
+    font-size: 20px;
+    color: orange;
 }
 
 #blog:hover{
-    color: red;
+    color: hotpink;
 }
 
 #about{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
+    margin-right: 40px;
+    margin-left: 40px;
     left: 50%;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    color: black;
+    font-family: "UnifrakturMaguntia", static;
+    font-size: 20px;
+    color: orange;
     transform: translateX(-50%);
 }
 
 #about:hover{
-    color: red;
+    color: hotpink;
 }
 
 #home{
-    position: absolute;
+    /* position: absolute; */
     top: 100;
     left: 0;
     padding: 10px;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
+    font-family: "UnifrakturMaguntia", static;
+    font-size: 20px;
     color: black;
 
 }
@@ -86,16 +97,6 @@ a:hover{
 
 }
 
-.flex-container3{
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    font-family: "Raleway", sans-serif;
-    border-radius: 10px 10px 10px 10px;
-    
-}
-
 .parent-container {
     display: flex;
     flex-wrap: nowrap;
@@ -103,43 +104,58 @@ a:hover{
     
 }
 
-.flex-container {
+.flex-container3{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: left;
-    flex-direction: column;
-    height: 100%;
-    width: 60%;
-   
+    flex-direction: row;
+    height: 5vh;
+    width: 100vw;
+    font-family: "Raleway", sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    
 }
 
-.flex-container2 {
+.flex-container2{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    justify-content: left;
+    height: 100vh;
     width: 40%;
-   
+    background-color: coral;
+
 }
 
-.flex-item {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 10px;
-    text-align: left;
-    border: 2px solid yellow;
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: right;
+    flex-direction: column;
+    justify-content: right;
+    height: 100%;
+    width: 50%;
+    /* background-color: purple;
+    */
 }
 
-.header {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 10px;
-    text-align: left;
-    border: 2px solid yellow;
+
+
+
+h2{
+    font-size: 20px;
 }
 
-#title{
-    font-family:"Pinyon Script", sans-serif;
-    font-size: 180px;
+
+#hello{
+    font-family:"Jacquarda Bastarda 9", sans-serif;
+    font-size: 100px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.flexbox{
+    width: 20%;
+    height: 40vh;
+    background-color: yellow;
 }

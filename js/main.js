@@ -18,7 +18,7 @@ var scene = new THREE.Scene();
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
 camera.position.x =-5;
-camera.position.y = 3;
+camera.position.y = 15;
 camera.position.z = 50;
 
 
@@ -106,11 +106,11 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('models/icosub_2.glb', function(gltf){
+gltfLoader.load('models/tosakin_goldfish.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(1,1,1);
-    orb.position.set(-1.5,2,-2);
-    //  scene.add(orb);
+    orb.scale.set(2,2,2);
+    orb.position.set(-16,14,-3);
+     scene.add(orb);
 
 
 
@@ -127,13 +127,13 @@ var mixerNewModel;
 var newModel_anim;
 gltfLoader.load('models/heart_in_love.glb', function (gltf) {
     newModel = gltf.scene;
-    newModel.scale.set(.1, .1,.1);
-    newModel.position.set(7, 3, -5);
-    scene.add(newModel);
+    newModel.scale.set(.06, .06,.05);
+    newModel.position.set(-13, 10, -5);
+    // scene.add(newModel);
 
-    mixerNewModel = new THREE.AnimationMixer(newModel);
-    newModel_anim = gltf.animations[0];
-    mixerNewModel.clipAction(newModel_anim).play();
+    // mixerNewModel = new THREE.AnimationMixer(newModel);
+    // newModel_anim = gltf.animations[0];
+    // mixerNewModel.clipAction(newModel_anim).play();
 });
 
 
@@ -191,23 +191,23 @@ function moveObj(event) {
     raycaster.ray.intersectPlane(plane, intersectionPoint);
     intersectionPoint.z = -2;
     // Update the cube's position to match the intersection point
-    newModel.position.copy(intersectionPoint);
+    orb.position.copy(intersectionPoint);
 }
 
 // Add event listener for mouse movement
-document.addEventListener('mousemove', moveObj, false);
+// document.addEventListener('mousemove', moveObj, false);
 
-// Add event listener for mouse movement
-document.addEventListener('mousemove', onMouseMove, false);
-document.addEventListener('click', onObjectClick);
+// // // Add event listener for mouse movement
+// document.addEventListener('mousemove', onMouseMove, false);
+// document.addEventListener('click', onObjectClick);
 
-function onObjectClick(event){
-    const object = getFirstObjectWithName(event, window, camera, scene, "newModel");
-    if(object !== null){
-        //add any action you want to perform when the object is clicked
-        // pink.material.color.set("#30ff49");
-    }
-}
+// function onObjectClick(event){
+//     const object = getFirstObjectWithName(event, window, camera, scene, "orb");
+//     if(object !== null){
+//         //add any action you want to perform when the object is clicked
+//         // pink.material.color.set("#30ff49");
+//     }
+// }
 
 
 // // Function to handle icon click event
@@ -233,33 +233,19 @@ function onObjectClick(event){
 
 var lightSize = 20;
 // 5: Add lighting to the scene
-var light = new THREE.PointLight(0x96d7e8,lightSize,1000)
-light.position.set(0,3,0);
-scene.add(light);
 
-var light1 = new THREE.PointLight(0x96d7e8,lightSize,1000)
-light1.position.set(5,5,0);
-scene.add(light1);
 
-var light2 = new THREE.DirectionalLight(0x96d7e8,lightSize,2000)
-light2.position.set(0,2,0);
+var light = new THREE.AmbientLight(0x99ffff,lightSize,20)
+light.position.set(-10,-5,-5);
+// scene.add(light);
+
+var light2 = new THREE.HemisphereLight(0x99ffff,lightSize,20)
+light2.position.set(10,5,-5);
 scene.add(light2);
 
-var light3 = new THREE.DirectionalLight(0x96d7e8,lightSize,2000)
-light2.position.set(5,5,0);
-scene.add(light3);
-
-var light4 = new THREE.PointLight(0x69a9dc,lightSize,2000)
-light2.position.set(-5,5,0);
-scene.add(light4);
-
-var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
-light2.position.set(0,5,5);
-scene.add(light5);
-
-var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,2000)
-light2.position.set(0,5,5);
-scene.add(light5);
+var light3 = new THREE.RectAreaLight(0x99ffff,lightSize,20)
+light3.position.set(10,5,-5);
+// scene.add(light3);
 
 
 
