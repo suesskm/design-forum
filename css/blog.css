@@ -10,6 +10,10 @@ canvas{
 }
 
 
+style{
+    object-fit: cover;
+}
+
 @font-face {
     font-family: 'kupole';
     src: url('../media/fonts/KUPOLE-Regular.ttf') format('ttf');
