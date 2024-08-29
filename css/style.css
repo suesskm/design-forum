@@ -9,9 +9,50 @@ canvas{
     display: block;
 }
 
+
+@font-face {
+    font-family: 'Fourmi';
+    src: url('../media/fonts/FOURMI-light2.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+  @font-face {
+    font-family: 'stairs';
+    src: url('../media/fonts/Stairs.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
+    font-family: 'squaredshadow';
+    src: url('../media/fonts/SquaredShadow.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+  @font-face {
+    font-family: 'wavy';
+    src: url('../media/fonts/wavy.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+
 #three-body{
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     /* z-index: 1; */
 }
@@ -35,133 +76,101 @@ a:hover{
 }
 
 #archive{
-    /* position: absolute; */
-    top: 0;
-    right: 0;
-    font-family: "UnifrakturMaguntia", static;
-    font-size: 20px;
-    padding: 10px;
-    color: orange;
-    margin-right: 60px;
-    margin-left: 60px;
+   font-size: 30px;
+   
 }
 
 #archive:hover{
-    color: hotpink;
+    background-color: fuchsia;
 }
 
 #blog{
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    padding: 10px;
-    font-family: "UnifrakturMaguntia", static;
-    font-size: 20px;
-    color: orange;
+  font-size: 30px;
 }
 
 #blog:hover{
-    color: hotpink;
+    background-color: fuchsia;
 }
 
 #about{
-    /* position: absolute; */
-    top: 0;
-    margin-right: 40px;
-    margin-left: 40px;
-    left: 50%;
-    padding: 10px;
-    font-family: "UnifrakturMaguntia", static;
-    font-size: 20px;
-    color: orange;
-    transform: translateX(-50%);
+  font-size: 30px;
 }
 
 #about:hover{
-    color: hotpink;
+   background-color: fuchsia;
 }
 
-#home{
-    /* position: absolute; */
-    top: 100;
-    left: 0;
-    padding: 10px;
-    font-family: "UnifrakturMaguntia", static;
-    font-size: 20px;
-    color: black;
 
-}
-
-#home:hover{
-    color: yellow;
-
-}
 
 .parent-container {
     display: flex;
-    flex-wrap: nowrap;
-    height: 90vh;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: row;
     
 }
 
 .flex-container3{
     display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    font-family: "Raleway", sans-serif;
-    border-radius: 10px 10px 10px 10px;
-    position: absolute;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    align-items: center;
+ justify-content: space-around;
+ font-family: 'fourmi', sans-serif;
     
 }
 
-.flex-container2{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    height: 100vh;
-    width: 40%;
-    background-color: coral;
 
-}
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    align-items: right;
+    align-items: center;
     flex-direction: column;
-    justify-content: right;
-    height: 100%;
-    width: 50%;
-    /* background-color: purple;
-    */
+    justify-content: center;
+    height: auto;
+    width: 90%;
+  
+    
+   
 }
 
 
 
 
 h2{
-    font-size: 20px;
+    font-size: 18px;
+    position: absolute;
+    font-family: 'wavy';
+    margin-top: 300px;
+    margin-right: 100px;
+    margin-left: 900px;
+   
 }
 
 
-#hello{
-    font-family:"Jacquarda Bastarda 9", sans-serif;
-    font-size: 100px;
+h1{
+    font-family:"stairs", serif;
+    font-size: 80px;
     position: absolute;
     margin-top: 50px;
 }
 
-.flexbox{
-    width: 20%;
-    height: 40vh;
-    background-color: yellow;
-}
 
-#clouds{
-    width: 2px;
-    height: 4px;
+h3{
+    font-size: 24px;
     position: absolute;
+    font-family: 'squaredshadow';
+    margin-top: 0px;
+    margin-right: 700px;
+    margin-left: 0px;
+    margin-bottom: 200px;
+    animation: blink 2s linear infinite;
 }
+@keyframes blink{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+  }
+  

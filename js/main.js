@@ -6,8 +6,10 @@ import { getFirstObjectWithName } from './RayCastHelper.js';
 
 
 
-var width = window.innerWidth*1.2;
-var height = window.innerHeight*1.2;
+var width = window.innerWidth*1;
+var height = window.innerHeight*1;
+
+
 
 
 
@@ -18,8 +20,8 @@ var scene = new THREE.Scene();
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
 camera.position.x =-5;
-camera.position.y = 15;
-camera.position.z = 50;
+camera.position.y =19;
+camera.position.z = 2;
 
 
 
@@ -44,7 +46,7 @@ const greenMaterial = new THREE.MeshBasicMaterial({map: greenTexture});
 
 const greenGeometry = new THREE.SphereGeometry(1,32,32);
 const green = new THREE.Mesh(greenGeometry, greenMaterial);
-// scene.add(green);
+scene.add(green);
 
 green.position.set(10,-4,-2);
 green.scale.set(1,1,1);
@@ -59,7 +61,8 @@ const purpleMaterial = new THREE.MeshBasicMaterial({map: purpleTexture});
 
 const purpleGeometry = new THREE.SphereGeometry(1,32,32);
 const purple = new THREE.Mesh(purpleGeometry, purpleMaterial);
-// scene.add(purple);
+scene.add(purple);
+
 
 purple.name="purple";
 purple.position.set(-10,4,-10);
@@ -77,7 +80,7 @@ const yellowMaterial = new THREE.MeshBasicMaterial({map: yellowTexture});
 
 const yellowGeometry = new THREE.SphereGeometry(1,32,32);
 const yellow = new THREE.Mesh(yellowGeometry, yellowMaterial);
-// scene.add(yellow);
+scene.add(yellow);
 
 yellow.position.set(-5,6,5);
 yellow.scale.set(1,1,1);
@@ -92,7 +95,7 @@ const pinkMaterial = new THREE.MeshBasicMaterial({map: pinkTexture});
 
 const pinkGeometry = new THREE.SphereGeometry(1,32,32);
 const pink = new THREE.Mesh(pinkGeometry, pinkMaterial);
-// scene.add(pink);
+scene.add(pink);
 pink.name = "pink";
 pink.position.set(1,4,1);
 pink.scale.set(1,1,1);
@@ -106,34 +109,39 @@ var mixerOrb;          // Three.JS AnimationMixer
 var orb_anim;  //animation FLY
 //adding the 3D model
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('models/tosakin_goldfish.glb', function(gltf){
+gltfLoader.load('models/map_butterfly.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(2,2,2);
-    orb.position.set(-16,14,-3);
-     scene.add(orb);
+    orb.scale.set(10,10,10);
+    orb.position.set(-3,-1,-4);
+    //  scene.add(orb);
 
 
 
     //ANIMATION MIXER
-    mixerOrb = new THREE.AnimationMixer(orb);
+    // mixerOrb = new THREE.AnimationMixer(orb);
     // //apply the animation
-    orb_anim = gltf.animations[0]; //first animation
-    mixerOrb.clipAction( orb_anim ).play();
+    // orb_anim = gltf.animations[0]; //first animation
+    // mixerOrb.clipAction( orb_anim ).play();
 });
 
 // Add new model
 var newModel;
 var mixerNewModel;
 var newModel_anim;
-gltfLoader.load('models/heart_in_love.glb', function (gltf) {
+gltfLoader.load('models/clearwing_swallowtail.glb', function (gltf) {
     newModel = gltf.scene;
-    newModel.scale.set(.06, .06,.05);
-    newModel.position.set(-13, 10, -5);
-    // scene.add(newModel);
+    newModel.scale.set(10, 10,10);
+    newModel.position.set(4, -20, -10);
+    scene.add(newModel);
 
-    // mixerNewModel = new THREE.AnimationMixer(newModel);
-    // newModel_anim = gltf.animations[0];
-    // mixerNewModel.clipAction(newModel_anim).play();
+    mixerNewModel = new THREE.AnimationMixer(newModel);
+    newModel_anim = gltf.animations[0];
+    mixerNewModel.clipAction(newModel_anim).play();
+
+
+  
+
+
 });
 
 
@@ -235,13 +243,17 @@ var lightSize = 20;
 // 5: Add lighting to the scene
 
 
-var light = new THREE.AmbientLight(0x99ffff,lightSize,20)
+var light = new THREE.AmbientLight(0x99ffff,lightSize,1)
 light.position.set(-10,-5,-5);
 // scene.add(light);
 
 var light2 = new THREE.HemisphereLight(0x99ffff,lightSize,20)
 light2.position.set(10,5,-5);
 scene.add(light2);
+
+var light4 = new THREE.HemisphereLight(0x99ffff,lightSize,20)
+light4.position.set(5,3,5);
+scene.add(light4);
 
 var light3 = new THREE.RectAreaLight(0x99ffff,lightSize,20)
 light3.position.set(10,5,-5);
@@ -295,9 +307,17 @@ function animate(){
     // pink.rotation.x += 0.08;
 
     
-
+    if(mixerNewModel){
+        mixerNewModel.update(clock.getDelta());
+    }
     
-
+    
+ 
+       
+    // if(mixerOrb){
+    //     mixerOrb.update(clock.getDelta());
+    // }
+    
 
     // if(orb.position.x < -2){
     //     orb.rotation.y = THREE.MathUtils.degToRad(180);

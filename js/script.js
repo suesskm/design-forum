@@ -129,7 +129,7 @@ gltfLoader.load('models/dandelion.glb', function (gltf) {
     newModel = gltf.scene;
     newModel.scale.set(.1, .1,.1);
     newModel.position.set(7, 3, -5);
-    // scene.add(newModel);
+    scene.add(newModel);
 
     mixerNewModel = new THREE.AnimationMixer(newModel);
     newModel_anim = gltf.animations[0];
