@@ -47,7 +47,7 @@ body, html {
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
- background-color: orange;
+
     
 }
 
@@ -183,12 +183,47 @@ color: yellow;
     margin-right: 800px;
     animation: blink 2s linear infinite;
   }
-  @keyframes blink{
-    0%{opacity: 0;}
-    50%{opacity: .5;}
-    100%{opacity: 1;}
-    }
-    
+
+  #square6 {
+    width: 80px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top: 500px;
+    margin-right: 900px;
+    animation: slidein 4s infinite; 
+}
+
+#square7 {
+    width: 80px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 900px;
+    animation: slidein2 4s infinite; /* Set a duration and use infinite to loop */
+}
+
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes slidein {
+    0% { left: -150%; }
+    50% { left: 50%; }
+    100% { left: 150%; }
+}
+
+
+@keyframes slidein2 {
+    0% { left: 150%; }
+    50% { left: 50%; }
+    100% { left: -150%; }
+
+}
 
 
 

@@ -9,6 +9,12 @@ canvas{
     display: block;
 }
 
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
 
 @font-face {
     font-family: 'Fourmi';
@@ -28,6 +34,16 @@ canvas{
     font-style: normal;
   
   }
+
+  @font-face {
+    font-family: 'zaltys';
+    src: url('../media/fonts/ZALTYS-Regular.ttf') format('ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
 
 
 #three-body{
@@ -117,13 +133,6 @@ a:hover{
 
 
 
-h2{
-    font-size: 20px;
-    font-family:"Grenze Gotisch", serif;
-    font-size: 80px;
-    position: absolute;
-   
-}
 
 
 h1{
@@ -133,4 +142,76 @@ h1{
     margin-top: 50px;
 }
 
+
+#image-desktop{
+    width: 60%;
+    height: 70vh;
+}
+
+
+.scrollbar-inner{
+    background-color: hotpink;
+}
+
+.scrollbar-inner2{
+    background-color: yellow;
+}
+
+
+.scrollbar-inner3{
+    background-color: lightskyblue;
+}
+
+
+.scrollbar-inner4{
+    background-color: orange;
+}
+
+.scrollbar-inner5{
+    background-color: lime;
+}
+
+.scrollbar-inner6{
+    background-color: magenta;
+}
+
+.scrollbar-inner7{
+    background-color: cyan;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'zaltys', sans-serif;
+    font-size: 80px;
+    letter-spacing: 30px;
+}
+
+.scrollbar {
+    display: flex;
+    overflow: hidden; /* Hide the overflow to ensure the scrolling looks clean */
+    width: 100vw; /* Full width to ensure it stretches across the screen */
+}
+
+.scrollbar-inner, .scrollbar-inner2, .scrollbar-inner3, .scrollbar-inner4, .scrollbar-inner5, .scrollbar-inner6, .scrollbar-inner7 {
+    display: flex;
+    width: auto;
+    animation: scroll 20s linear infinite; /* The animation properties */
+    white-space: nowrap; /* Prevents text wrapping to a new line */
+}
+/* 
+.scrollbar-inner > div {
+    margin-right: 50px; 
+} */
+
+/* Animation Keyframes */
+@keyframes scroll {
+    from {
+        transform: translateX(100%); /* Start position off-screen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* End position off-screen to the left */
+    }
+}
 

@@ -118,6 +118,7 @@ a:hover{
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
+ background-color: yellow;
     
 }
 
@@ -178,5 +179,23 @@ h3{
     font-size: 18px;
    
     font-family: 'wavy';
+
+}
+
+#image-desktop{
+    width: 50%;
+    height: 60vh;
+}
+
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: cyan;
 
 }
