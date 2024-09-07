@@ -203,19 +203,19 @@ function moveObj(event) {
 }
 
 // Add event listener for mouse movement
-// document.addEventListener('mousemove', moveObj, false);
+document.addEventListener('mousemove', moveObj, false);
 
-// // // Add event listener for mouse movement
-// document.addEventListener('mousemove', onMouseMove, false);
-// document.addEventListener('click', onObjectClick);
+// // Add event listener for mouse movement
+document.addEventListener('mousemove', onMouseMove, false);
+document.addEventListener('click', onObjectClick);
 
-// function onObjectClick(event){
-//     const object = getFirstObjectWithName(event, window, camera, scene, "orb");
-//     if(object !== null){
-//         //add any action you want to perform when the object is clicked
-//         // pink.material.color.set("#30ff49");
-//     }
-// }
+function onObjectClick(event){
+    const object = getFirstObjectWithName(event, window, camera, scene, "orb");
+    if(object !== null){
+        //add any action you want to perform when the object is clicked
+         pink.material.color.set("#30ff49");
+    }
+}
 
 
 // // Function to handle icon click event

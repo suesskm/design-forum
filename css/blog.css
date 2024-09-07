@@ -23,6 +23,24 @@ style{
   
   }
 
+  @font-face {
+    font-family: 'Tiltortion';
+    src: url('../media/fonts/Tiltortion.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
+    font-family: 'Amakan-Strips';
+    src: url('../media/fonts/Amakan-Strips.woff') format('woff');
+    src: url('../media/fonts/Amakan-Strips.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
 
 #three-body{
     width: 100%;
@@ -35,37 +53,36 @@ style{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #FFB6C1;
 }
 
-a:hover{
-    color: yellow;
-}
 
 #archive{
     font-size: 30px;
-    
+    padding: 100px;
  }
  
- #archive:hover{
-     background-color: fuchsia;
- }
+#archive:hover{
+    font-size: 45px;
+    
+}
  
  #blog{
    font-size: 30px;
+   padding: 100px;
  }
  
- #blog:hover{
-     background-color: fuchsia;
- }
- 
+#blog:hover{
+    font-size: 45px;}
+
  #about{
    font-size: 30px;
+   padding: 100px;
  }
  
- #about:hover{
-    background-color: fuchsia;
- }
+#about:hover{
+    font-size: 45px;
+}
  
  
 
@@ -76,14 +93,16 @@ a:hover{
 }
 
 #title{
-    font-family: "kupole";
-    font-size: 120px;
+    font-family: "Tiltortion", san-serif;
+    font-size: 160px;
 }
 
 h1{
-    font-family: "Jacquarda Bastarda 9", san-serif;
-    font-size: 20px;
-    color: red;
+    font-family: "Tiltortion", san-serif;
+    font-size: 30px;
+    color: #FFB6C1;
+   padding-top: 2px;
+   margin-bottom: -20px;
  
     
 }
@@ -96,7 +115,7 @@ h2{
 p{
     font-family: "Courier New", san-serif;
     font-size: 13px;
-    background-color: yellow;
+    
 }
 
 .parent-container {
@@ -104,6 +123,7 @@ p{
     flex-wrap: wrap;
     height: 100%;
     flex-direction: row;
+    color: #FFB6C1;
     
 }
 
@@ -111,11 +131,12 @@ p{
     display: flex;
     flex-direction: column;
     width: 10%;
-    height: 100vh;
+    height: auto;
     align-items: center;
- justify-content: space-around;
+ /* justify-content: space-around; */
  font-family: 'fourmi', sans-serif;
-    
+  color: #FFB6C1; 
+  border: 3px solid #FFB6C1; 
 }
 
 .flex-container {
@@ -123,9 +144,22 @@ p{
     flex-wrap: nowrap;
     align-items: left;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     width: 60%;
+    border: 3px solid #FFB6C1;
+  padding: 5px;
    
+}
+
+
+
+.mini-header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    background-color: yellow;
 }
 
 .flex-container2 {
@@ -133,19 +167,37 @@ p{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 20%;
-    padding: 10;
-    
-   
+    height: auto;
+    width: 30%;
+    border: 2px solid #FFB6C1;
+    padding: 5px;
 }
+
+.header1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    background-color: yellow;
+}
+
+.header2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+   padding: 20px;
+}
+
 
 .flex-item {
    
     padding: 20px;
     /* margin: 10px; */
     text-align: left;
-    border: 2px solid black;
+   
     margin-right: 20px;
 }
 
@@ -254,3 +306,54 @@ p{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+  
+
+  #myButton {
+    background-color: #FFB6C1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*  center the button */
+    position: absolute;
+    top: 22%;   
+    left: 88%;
+    transform: translate(-50%, -50%);
+    font-family: "Amakan-Strips", san-serif;
+    z-index: 1;
+}
+
+
+@keyframes changeBackgroundColor {
+0% {
+    background-color: red;
+}
+50% {
+    background-color: blue;
+}
+100% {
+    background-color: green;
+}
+}
+
+
+
+
+
+
+@keyframes changeBackgroundColor {
+0% {
+    background-color: rgb(182, 46, 128);
+}
+50% {
+    background-color: rgb(86, 185, 232);
+}
+100% {
+    background-color: rgb(172, 192, 26);
+}
+}
+
+.bg-anim {
+animation: changeBackgroundColor 3s infinite;
+}

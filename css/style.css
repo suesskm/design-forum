@@ -65,7 +65,7 @@ a{
 }
 
 a:hover{
-    color: yellow;
+    color: pink;
 }
 
 #three-body{
@@ -81,7 +81,7 @@ a:hover{
 }
 
 #archive:hover{
-    background-color: fuchsia;
+    background-color: yellow;
 }
 
 #blog{
@@ -89,7 +89,7 @@ a:hover{
 }
 
 #blog:hover{
-    background-color: fuchsia;
+    background-color: yellow;
 }
 
 #about{
@@ -97,7 +97,7 @@ a:hover{
 }
 
 #about:hover{
-   background-color: fuchsia;
+   background-color: yellow;
 }
 
 
@@ -118,7 +118,7 @@ a:hover{
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
- background-color: yellow;
+ 
     
 }
 
@@ -194,7 +194,6 @@ h3{
     justify-content: center;
     height: 90vh;
     width: 100%;
-    margin-left: 100px;
     margin-top: 100px;
     background-color: cyan;
 
