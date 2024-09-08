@@ -151,6 +151,8 @@ h1{
 
 .scrollbar-inner{
     background-color: hotpink;
+    width: 100%;
+
 }
 
 .scrollbar-inner2{
@@ -191,15 +193,12 @@ header{
 .scrollbar {
     display: flex;
     overflow: hidden; /* Hide the overflow to ensure the scrolling looks clean */
-    width: 100vw; /* Full width to ensure it stretches across the screen */
+    width: 100%; /* Full width to ensure it stretches across the screen */
+    animation: scroll 20s linear infinite;
+    object-fit: contain;
 }
 
-.scrollbar-inner, .scrollbar-inner2, .scrollbar-inner3, .scrollbar-inner4, .scrollbar-inner5, .scrollbar-inner6, .scrollbar-inner7 {
-    display: flex;
-    width: auto;
-    animation: scroll 20s linear infinite; /* The animation properties */
-    white-space: nowrap; /* Prevents text wrapping to a new line */
-}
+
 /* 
 .scrollbar-inner > div {
     margin-right: 50px; 
