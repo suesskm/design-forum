@@ -125,11 +125,11 @@ gltfLoader.load('../models/cd_3d_model.glb', function(gltf){
 var newModel;
 var mixerNewModel;
 var newModel_anim;
-gltfLoader.load('models/dandelion.glb', function (gltf) {
+gltfLoader.load('../models/plasmatic_pigment.glb', function (gltf) {
     newModel = gltf.scene;
     newModel.scale.set(.1, .1,.1);
     newModel.position.set(7, 3, -5);
-    scene.add(newModel);
+    // scene.add(newModel);
 
     mixerNewModel = new THREE.AnimationMixer(newModel);
     newModel_anim = gltf.animations[0];
@@ -191,7 +191,7 @@ function moveObj(event) {
     raycaster.ray.intersectPlane(plane, intersectionPoint);
     intersectionPoint.z = -2;
     // Update the cube's position to match the intersection point
-    newModel.position.copy(intersectionPoint);
+    // orb.position.copy(intersectionPoint);
 }
 
 // Add event listener for mouse movement
@@ -202,7 +202,7 @@ document.addEventListener('mousemove', onMouseMove, false);
 document.addEventListener('click', onObjectClick);
 
 function onObjectClick(event){
-    const object = getFirstObjectWithName(event, window, camera, scene, "newModel");
+    const object = getFirstObjectWithName(event, window, camera, scene, "orb");
     if(object !== null){
         //add any action you want to perform when the object is clicked
         // pink.material.color.set("#30ff49");
@@ -231,19 +231,19 @@ function onObjectClick(event){
 
 //------------------------lighting-------------------------
 
-var lightSize = 20;
+var lightSize = 10;
 // 5: Add lighting to the scene
 var light = new THREE.PointLight(0x96d7e8,lightSize,100)
 light.position.set(0,3,0);
-scene.add(light);
+// scene.add(light);
 
 var light1 = new THREE.PointLight(0x96d7e8,lightSize,100)
 light1.position.set(5,5,0);
 scene.add(light1);
 
-var light2 = new THREE.DirectionalLight(0x96d7e8,lightSize,.01)
+var light2 = new THREE.DirectionalLight(0x96d7e8,lightSize,100)
 light2.position.set(0,2,0);
-// scene.add(light2);
+scene.add(light2);
 
 var light3 = new THREE.DirectionalLight(0x96d7e8,lightSize,2000)
 light2.position.set(5,5,0);
@@ -259,7 +259,7 @@ light2.position.set(0,5,5);
 
 var light5 = new THREE.DirectionalLight(0x69a9dc,lightSize,20)
 light2.position.set(0,5,5);
-scene.add(light5);
+// scene.add(light5);
 
 
 
