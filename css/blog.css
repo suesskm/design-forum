@@ -242,7 +242,7 @@ p{
     transform: translate(-50%, -50%);
     font-family: "Amakan-Strips", san-serif;
     z-index: 1;
-    animation: colorChange 3s infinite;
+    animation: colorChange .5s infinite;
    
     }
 
@@ -262,7 +262,7 @@ p{
     transform: translate(-50%, -50%);
     font-family: "Amakan-Strips", san-serif;
     z-index: 1;
-    animation: colorChange 3s infinite;
+    animation: colorChange .5s infinite;
    
     }
 
@@ -280,7 +280,7 @@ p{
         transform: translate(-50%, -50%);
         font-family: "Amakan-Strips", san-serif;
         z-index: 1;
-        animation: colorChange 3s infinite;
+        animation: colorChange .5s infinite;
        
         }
 
@@ -299,7 +299,7 @@ p{
             transform: translate(-50%, -50%);
             font-family: "Amakan-Strips", san-serif;
             z-index: 1;
-            animation: colorChange 3s infinite;
+            animation: colorChange .5s infinite;
            
             }
     
@@ -310,10 +310,10 @@ p{
         color: #FFB6C1; /* Start with initial color */
     }
 
-    25%{
-        color: #6F4E37;  /* Change to desired color a quarter of the way through */}
+    /* 25%{
+        color: #6F4E37;  } */
     50% {
-       color: #FFB6C1; /* Change to desired color halfway through */
+       color: #FFB6C1;
 
     }
     100% {
@@ -396,13 +396,13 @@ p{
 
 @keyframes changeBackgroundColor {
 0% {
-    background-color: red;
+    background-color: rgb(255, 0, 106);
 }
 50% {
-    background-color: blue;
+    background-color: rgb(17, 255, 219);
 }
 100% {
-    background-color: green;
+    background-color: rgb(175, 255, 4);
 }
 }
 
@@ -534,4 +534,6 @@ h3{
     left: 62%;
     color: #6F4E37;
     background-color: #FFB6C1;
+    animation: colorChange .5s infinite;
+   
 }
