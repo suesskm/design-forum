@@ -19,9 +19,9 @@ var scene = new THREE.Scene();
 
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
-camera.position.x =-5;
-camera.position.y =19;
-camera.position.z = 2;
+camera.position.x =-3;
+camera.position.y =2;
+camera.position.z = -10;
 
 
 
@@ -39,66 +39,66 @@ document.getElementById("three-body").appendChild(renderer.domElement);
 //create a texture loader
 const textureLoader = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const greenTexture = textureLoader.load('media/images/green.png');
+const greenTexture = textureLoader.load('../media/images/green.png');
 
 //create a material using the texture
 const greenMaterial = new THREE.MeshBasicMaterial({map: greenTexture});
 
 const greenGeometry = new THREE.SphereGeometry(1,32,32);
 const green = new THREE.Mesh(greenGeometry, greenMaterial);
-// scene.add(green);
+scene.add(green);
 
 green.position.set(10,-4,-2);
-green.scale.set(1,1,1);
+green.scale.set(3,3,3);
 
 //create a texture loader
 const textureLoader2 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const purpleTexture = textureLoader2.load('media/images/purple.png');
+const purpleTexture = textureLoader2.load('../media/images/purple.png');
 
 //create a material using the texture
 const purpleMaterial = new THREE.MeshBasicMaterial({map: purpleTexture});
 
 const purpleGeometry = new THREE.SphereGeometry(1,32,32);
 const purple = new THREE.Mesh(purpleGeometry, purpleMaterial);
-// scene.add(purple);
+scene.add(purple);
 
 
 purple.name="purple";
 purple.position.set(-10,4,-10);
-purple.scale.set(1,1,1);
+purple.scale.set(3,3,3);
 
 
 
 //create a texture loader
 const textureLoader3 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const yellowTexture = textureLoader3.load('media/images/yellow.png');
+const yellowTexture = textureLoader3.load('../media/images/yellow.png');
 
 //create a material using the texture
 const yellowMaterial = new THREE.MeshBasicMaterial({map: yellowTexture});
 
 const yellowGeometry = new THREE.SphereGeometry(1,32,32);
 const yellow = new THREE.Mesh(yellowGeometry, yellowMaterial);
-// scene.add(yellow);
+scene.add(yellow);
 
 yellow.position.set(-5,6,5);
-yellow.scale.set(1,1,1);
+yellow.scale.set(3,3,3);
 
 //create a texture loader
 const textureLoader4 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const pinkTexture = textureLoader4.load('media/images/pink.png');
+const pinkTexture = textureLoader4.load('../media/images/pink.png');
 
 //create a material using the texture
 const pinkMaterial = new THREE.MeshBasicMaterial({map: pinkTexture});
 
 const pinkGeometry = new THREE.SphereGeometry(1,32,32);
 const pink = new THREE.Mesh(pinkGeometry, pinkMaterial);
-// scene.add(pink);
+scene.add(pink);
 pink.name = "pink";
 pink.position.set(1,4,1);
-pink.scale.set(1,1,1);
+pink.scale.set(3,3,3);
 
 
 
@@ -113,7 +113,7 @@ gltfLoader.load('../models/map_butterfly.glb', function(gltf){
     orb = gltf.scene;
     orb.scale.set(10,10,10);
     orb.position.set(-3,-1,-4);
-     scene.add(orb);
+    //  scene.add(orb);
 
 
 
@@ -170,14 +170,14 @@ function onMouseMove(event) {
     };
 
     // Adjust rotation based on mouse movement
-    // const rotationSpeed = 0.001;
-    // //substitute 'selfieCube' with the variable name for any object you want
-    // grass.rotation.y += deltaMove.x * rotationSpeed;
-    // grass.rotation.x += deltaMove.y * rotationSpeed;
+    const rotationSpeed = 0.001;
+    //substitute 'selfieCube' with the variable name for any object you want
+    grass.rotation.y += deltaMove.x * rotationSpeed;
+    grass.rotation.x += deltaMove.y * rotationSpeed;
    
-    // const sphereRotationSpeed = 0.005;
-    // waterVideo.rotation.y += deltaMove.x * sphereRotationSpeed;
-    // waterVideo.rotation.x += deltaMove.y * sphereRotationSpeed;
+    const sphereRotationSpeed = 0.005;
+    waterVideo.rotation.y += deltaMove.x * sphereRotationSpeed;
+    waterVideo.rotation.x += deltaMove.y * sphereRotationSpeed;
   
     
 }
