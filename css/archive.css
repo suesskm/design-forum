@@ -118,8 +118,8 @@ color: yellow;
 
 #hello{
     position: absolute;
-    color: black;
-    font-family: "Hellplague", san-serif;
+    color: red;
+    font-family: "pinyon script", san-serif;
     font-style: bold;
     font-weight: 400;
     font-size: 130px;
@@ -249,6 +249,50 @@ color: yellow;
     z-index: -1;
 }
 
+#square11 {
+    width: 120px;
+    height: 100px;
+    background: lightpink;
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 400px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square12 {
+    width: 120px;
+    height: 100px;
+    background: lightpink;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 200px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square13 {
+    width: 120px;
+    height: 100px;
+    background: lightpink;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 200px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square14 {
+    width: 120px;
+    height: 100px;
+    background: lightpink;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 550px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
 
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -279,7 +323,7 @@ color: yellow;
 
 
 h2{
-    color: black;
+    color: red;
     font-family: "pinyon script", san-serif;
     font-size: 44px;
     display: flex;
@@ -294,8 +338,8 @@ h2{
 }
 
 h3{
-    color: black;
-    font-family: "hellplague", san-serif;
+    color: red;
+    font-family: "pinyon script", san-serif;
     font-size: 24px;
     display: flex;
     justify-content: center;
