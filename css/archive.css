@@ -25,6 +25,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* 
@@ -406,14 +408,33 @@ h4{
     margin-left: 1000px;
     position: absolute;
     margin-top: 160px;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 
 
+h5{
+    color: black;
+    font-family: "Quicksand", san-serif;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-right: 1000px;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 10px;
 
-
-
-
+}
 
 
 

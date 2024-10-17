@@ -12,6 +12,8 @@ canvas{
 body{
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /* background-attachment: fixed;
     background-size: contain; */
 }
@@ -19,6 +21,15 @@ body{
 @font-face {
     font-family: 'Fourmi';
     src: url('../media/fonts/FOURMI-light2.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
+    font-family: 'Hellplague';
+    src: url('../media/fonts/hellplague.otf') format('otf');
     
     font-weight: normal;
     font-style: normal;
@@ -69,14 +80,16 @@ a:hover{
 
 #three-body{
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin: 0 auto;
     z-index: 1;
 }
 
 #archive{
-   font-size: 30px;
-   background-color: greenyellow;
+   font-size: 32px;
+   background-color: #CCCC99;
+   padding: 10%;
+   border-radius: 30%;
    
 }
 
@@ -85,8 +98,10 @@ a:hover{
 }
 
 #blog{
-  font-size: 30px;
-  background-color: greenyellow;
+    font-size: 32px;
+    background-color: #CCCC99;
+    padding: 10%;
+    border-radius: 30%;
 }
 
 #blog:hover{
@@ -94,7 +109,10 @@ a:hover{
 }
 
 #about{
-  font-size: 30px;
+    font-size: 32px;
+    background-color: #CCCC99;
+    padding: 10%;
+    border-radius: 30%;
 }
 
 #about:hover{
@@ -106,21 +124,22 @@ a:hover{
 .parent-container {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: auto;
     flex-direction: row;
+    width: auto;
     
 }
 
 .flex-container3{
     display: flex;
     flex-direction: column;
-    width: 5%;
-    height: 100vh;
+    width: 10%;
+    height: 80vh;
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
  z-index: 1;
-background-color: pink;
+/* background-color: pink; */
     
 }
 
@@ -132,9 +151,10 @@ background-color: pink;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 100%;
-    width: 80%;
-    
+    height: 100vh;
+    width: 90%;
+
+ 
    
    
  
@@ -150,15 +170,21 @@ h2{
     font-size: 18px;
     position: absolute;
     font-family: 'wavy';
+    margin-top:0px;
+    margin-right: 700px;
  
 }
 
 
 h1{
     font-family:"stairs", serif;
-    font-size: 100px;
-  z-index: -1;
-  color: blue;
+    font-size: 120px;
+
+  color: white;
+  position: absolute;
+    margin-top: 0px;
+    text-orientation: mixed;
+    
  
 }
 
@@ -174,7 +200,7 @@ h3{
     animation: blink 2s linear infinite;
     animation: scroll 2s linear infinite;
     color: teal;
-    z-index: -1;
+   
 }
 @keyframes blink{
   0%{opacity: 0;}
@@ -193,10 +219,34 @@ h3{
   
   h4{
     font-size: 18px;
-   z-index: -1;
     font-family: 'wavy';
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 900px;
+    margin-bottom: 600px;
+    background-color: #CC3366;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    animation: changeBackgroundColor 2s linear infinite;
+    
 
 }
+
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #CC3366;
+    }
+    25% {
+        background-color: #006633;
+    }
+    50% {
+        background-color: #FF6633;
+    }
+    }
+    
+
 
 .scrollbox{
     display: flex;
@@ -220,19 +270,133 @@ h3{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 10%;
-    margin-top: 100px;
-    
-    z-index: 1;
-    background-color:blueviolet;
+    height: 15vh;
+    width: 100%;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(81,36,237,1) 16%, rgba(48,41,235,1) 29%, rgba(31,67,199,1) 36%, rgba(30,6,230,1) 60%, rgba(119,103,223,1) 70%, rgba(88,40,224,1) 90%, rgba(255,255,255,1) 100%);
 }
 
 #nature1{
-    width: 50%;
-    height: 60vh;
-    margin-top: 100px;
-    margin-right: 100px;
+    width: 10%;
+    height: 40vh;
+    margin-bottom: 100px;
+    margin-right: 600px;
     z-index: -1;
     position: absolute;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    object-fit: cover;
+    object-position: 10% 100%;
 }
+
+#nature2{
+    width: 20%;
+    height: 40vh;
+    margin-top: 300px;
+    margin-left: 600px;
+    z-index: -1;
+    position: absolute;
+    clip-path: xywh(0 5px 100% 75% round 15% 0);
+    object-fit: cover;
+}
+
+#nature3{
+    width: 10%;
+    height: 10vh;
+    margin-top: 200px;
+    margin-left: 900px;
+    z-index: -1;
+    position: absolute;
+    clip-path: circle(40%);
+    object-fit: contain;
+    object-position: 40% 100%;
+}
+
+#heart {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 900px;
+    z-index: -1;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #CC3366;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    z-index: -1;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    z-index:-1;
+  }
+
+ #eye1{
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    margin-bottom: 130px;
+    margin-right: 600px;
+    margin-left: 20px;
+    margin-top: 15px;
+ }
+
+
+ #pupil1{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    margin-bottom: 130px;
+    margin-right: 600px;
+    margin-left: 20px;
+    margin-top: 15px;
+    animation: blink 1s step-start 0s infinite;
+ }
+
+@keyframes blink{
+    50% {
+        opacity: 0.0;}}
+
+ #eye2{
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    margin-bottom: 130px;
+    margin-right: 600px;
+    margin-left: 55px;
+    margin-top: 15px;
+    
+ }
+
+ #pupil2{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    margin-bottom: 130px;
+    margin-right: 600px;
+    margin-left: 55px;
+    margin-top: 15px;
+    animation: blink 1s step-start 0s infinite;
+    
+ }

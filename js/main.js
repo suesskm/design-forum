@@ -19,9 +19,9 @@ var scene = new THREE.Scene();
 
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
-camera.position.x =-5;
-camera.position.y =19;
-camera.position.z = 2;
+camera.position.x =15;
+camera.position.y =22;
+camera.position.z = 15;
 
 
 
@@ -39,7 +39,7 @@ document.getElementById("three-body").appendChild(renderer.domElement);
 //create a texture loader
 const textureLoader = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const greenTexture = textureLoader.load('media/images/ocean.png');
+const greenTexture = textureLoader.load('media/images/nature1.png');
 
 //create a material using the texture
 const greenMaterial = new THREE.MeshBasicMaterial({map: greenTexture});
@@ -54,7 +54,7 @@ green.scale.set(1,1,1);
 //create a texture loader
 const textureLoader2 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const purpleTexture = textureLoader2.load('media/images/ocean.png');
+const purpleTexture = textureLoader2.load('media/images/nature1.png');
 
 //create a material using the texture
 const purpleMaterial = new THREE.MeshBasicMaterial({map: purpleTexture});
@@ -73,7 +73,7 @@ purple.scale.set(1,1,1);
 //create a texture loader
 const textureLoader3 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const yellowTexture = textureLoader3.load('media/images/ocean.png');
+const yellowTexture = textureLoader3.load('media/images/nature1.png');
 
 //create a material using the texture
 const yellowMaterial = new THREE.MeshBasicMaterial({map: yellowTexture});
@@ -88,7 +88,7 @@ yellow.scale.set(1,1,1);
 //create a texture loader
 const textureLoader4 = new THREE.TextureLoader();
 //load the image as a textureWEBP
-const pinkTexture = textureLoader4.load('media/images/ocean.png');
+const pinkTexture = textureLoader4.load('media/images/nature1.png');
 
 //create a material using the texture
 const pinkMaterial = new THREE.MeshBasicMaterial({map: pinkTexture});
