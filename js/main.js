@@ -19,9 +19,9 @@ var scene = new THREE.Scene();
 
 // 2: Add a camera
 var camera = new THREE.PerspectiveCamera(75,width/height,0.1,1000);
-camera.position.x =15;
-camera.position.y =22;
-camera.position.z = 15;
+camera.position.x =25;
+camera.position.y =32;
+camera.position.z = 5;
 
 
 
