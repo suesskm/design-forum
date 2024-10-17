@@ -127,7 +127,7 @@ var mixerNewModel;
 var newModel_anim;
 gltfLoader.load('../models/plasmatic_pigment.glb', function (gltf) {
     newModel = gltf.scene;
-    newModel.scale.set(.1, .1,.1);
+    newModel.scale.set(10, 10,10);
     newModel.position.set(7, 3, -5);
     // scene.add(newModel);
 

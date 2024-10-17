@@ -72,7 +72,7 @@ color: yellow;
 
 
 #archive{
-    font-size: 30px;
+    font-size: 40px;
     
  }
  
@@ -81,7 +81,7 @@ color: yellow;
  }
  
  #blog{
-   font-size: 30px;
+   font-size: 40px;
  }
  
  #blog:hover{
@@ -89,7 +89,7 @@ color: yellow;
  }
  
  #about{
-   font-size: 30px;
+   font-size: 40px;
  }
  
  #about:hover{
@@ -293,6 +293,51 @@ color: yellow;
     z-index: -1;
 }
 
+#square15 {
+    width: 40px;
+    height: 40px;
+    background: #999966;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 500px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square16 {
+    width: 40px;
+    height: 40px;
+    background: #999966;
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 800px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square17 {
+    width: 40px;
+    height: 40px;
+    background: #999966;
+    position: absolute;
+    margin-top: 600px;
+    margin-right: 900px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+#square18 {
+    width: 40px;
+    height: 40px;
+    background: #999966;
+    position: absolute;
+    margin-top: 500px;
+    margin-right: 100px;
+   animation: fadeIn .5s infinite;
+    z-index: -1;
+}
+
+
 
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -338,9 +383,10 @@ h2{
 }
 
 h3{
-    color: red;
+    color: black;
     font-family: "pinyon script", san-serif;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 32px;
     display: flex;
     justify-content: center;
     margin-right: 100px;
@@ -349,6 +395,18 @@ h3{
     margin-top: 500px;
 }
 
+h4{
+    color: black;
+    font-family: "Quicksand", san-serif;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 160px;
+}
 
 
 

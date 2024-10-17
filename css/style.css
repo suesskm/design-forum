@@ -9,6 +9,12 @@ canvas{
     display: block;
 }
 
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    background-size: contain; */
+}
 
 @font-face {
     font-family: 'Fourmi';
@@ -50,13 +56,6 @@ canvas{
 
 
 
-#three-body{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    /* z-index: 1; */
-}
-
 
 
 a{
@@ -77,19 +76,21 @@ a:hover{
 
 #archive{
    font-size: 30px;
+   background-color: greenyellow;
    
 }
 
 #archive:hover{
-    background-color: yellow;
+    color: hotpink
 }
 
 #blog{
   font-size: 30px;
+  background-color: greenyellow;
 }
 
 #blog:hover{
-    background-color: yellow;
+    color: hotpink;
 }
 
 #about{
@@ -105,7 +106,7 @@ a:hover{
 .parent-container {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 100vh;
     flex-direction: row;
     
 }
@@ -113,12 +114,13 @@ a:hover{
 .flex-container3{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 5%;
     height: 100vh;
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
- 
+ z-index: 1;
+background-color: pink;
     
 }
 
@@ -128,10 +130,14 @@ a:hover{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    height: auto;
-    width: 90%;
+    height: 100%;
+    width: 80%;
+    
+   background-color: orange;
+   
+ 
   
     
    
@@ -144,18 +150,16 @@ h2{
     font-size: 18px;
     position: absolute;
     font-family: 'wavy';
-    margin-top: 300px;
-    margin-right: 100px;
-    margin-left: 900px;
-   
+ 
 }
 
 
 h1{
     font-family:"stairs", serif;
-    font-size: 80px;
-    position: absolute;
-    margin-top: 50px;
+    font-size: 100px;
+  z-index: -1;
+  color: blue;
+ 
 }
 
 
@@ -168,18 +172,42 @@ h3{
     margin-left: 0px;
     margin-bottom: 200px;
     animation: blink 2s linear infinite;
+    animation: scroll 2s linear infinite;
+    color: teal;
+    z-index: -1;
 }
 @keyframes blink{
   0%{opacity: 0;}
   50%{opacity: 1;}
   100%{opacity: 0;}
   }
+
+  @keyframes scroll {
+    from {
+        transform: translateX(100%); /* Start position off-screen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* End position off-screen to the left */
+    }
+}
   
   h4{
     font-size: 18px;
-   
+   z-index: -1;
     font-family: 'wavy';
 
+}
+
+.scrollbox{
+    display: flex;
+    background-color: lightblue;
+    width: 200px;
+    height: 300px;
+    overflow: scroll;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: -1;
 }
 
 #image-desktop{
@@ -192,9 +220,10 @@ h3{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    width: 100%;
+    height: 100vh;
+    width: 10%;
     margin-top: 100px;
-    background-color: cyan;
-
+    
+    z-index: 1;
+    background-color:blueviolet;
 }
