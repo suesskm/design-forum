@@ -111,13 +111,13 @@ var orb_anim;  //animation FLY
 const gltfLoader = new GLTFLoader();
 gltfLoader.load('models/map_butterfly.glb', function(gltf){
     orb = gltf.scene;
-    orb.scale.set(10,10,10);
-    orb.position.set(-3,-1,-4);
+    orb.scale.set(15,15,10);
+    orb.position.set(-3,14,2);
     //  scene.add(orb);
 
 
 
-    //ANIMATION MIXER
+    // ANIMATION MIXER
     // mixerOrb = new THREE.AnimationMixer(orb);
     // //apply the animation
     // orb_anim = gltf.animations[0]; //first animation
@@ -130,8 +130,8 @@ var mixerNewModel;
 var newModel_anim;
 gltfLoader.load('models/clearwing_swallowtail.glb', function (gltf) {
     newModel = gltf.scene;
-    newModel.scale.set(10, 10,10);
-    newModel.position.set(4, -20, -10);
+    newModel.scale.set(15, 15,10);
+    newModel.position.set(4, 4, -10);
     scene.add(newModel);
 
     mixerNewModel = new THREE.AnimationMixer(newModel);
