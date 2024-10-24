@@ -19,7 +19,19 @@ canvas{
   
   }
 
+  @font-face {
+    font-family: 'Medium';
+    src: url('../media/fonts/Medium copy.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
 
+  style {
+    object-fit: cover;
+    object-fit: contain;
+}
 
 body, html {
     margin: 0;
@@ -46,6 +58,7 @@ body, html {
     flex-wrap: wrap;
     height: 100%;
     flex-direction: row;
+   
     
 }
 
@@ -57,6 +70,7 @@ body, html {
     align-items: center;
  justify-content: space-around;
  font-family: 'fourmi', sans-serif;
+ z-index: 1;
 
     
 }
@@ -69,7 +83,8 @@ a{
 }
 
 a:hover{
-color: yellow;
+font-size: 50px;
+box-shadow: 5px 5px 5px #CC0066;
 }
 
 
@@ -78,26 +93,18 @@ color: yellow;
     
  }
  
- #archive:hover{
-     background-color: blue;
- }
- 
+
  #blog{
    font-size: 40px;
  }
  
- #blog:hover{
-     background-color: blue;
- }
+
  
  #about{
    font-size: 40px;
  }
  
- #about:hover{
-    background-color: blue;
- }
- 
+
 
 
 
@@ -120,224 +127,16 @@ color: yellow;
 
 #hello{
     position: absolute;
-    color: red;
-    font-family: "pinyon script", san-serif;
-    font-style: bold;
-    font-weight: 400;
-    font-size: 130px;
+    color: black;
+    font-family: "Medium", san-serif;
+   
+    font-size: 80px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
     
 
 }
 
-#square {
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top: 300px;
-    margin-left:600px;
-    animation: blink 1s linear infinite;
-  }
-
-  #square1{
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top: 350px;
-    margin-left:650px;
-    animation: blink 2s linear infinite;
-  }
-
-  #square2{
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top: 450px;
-    margin-left:350px;
-    animation: blink 2s linear infinite;
-  }
-
-  #square3{
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top:450px;
-    margin-right: 700px;
-    animation: blink 2s linear infinite;
-  }
-
-
-  #square4{
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top:350px;
-    margin-right: 550px;
-    animation: blink 2s linear infinite;
-  }
-    
-
-
-  #square5{
-    width: 30px;
-    height: 30px;
-    background: red;
-    position: absolute;
-    margin-top:400px;
-    margin-right: 800px;
-    animation: blink 2s linear infinite;
-  }
-
-  #square6 {
-    width: 80px;
-    height: 30px;
-    background: yellow;
-    position: absolute;
-    margin-top: 500px;
-    margin-right: 900px;
-    animation: slidein 4s infinite; 
-    z-index: -1;
-}
-
-#square7 {
-    width: 80px;
-    height: 30px;
-    background: yellow;
-    position: absolute;
-    margin-top: 520px;
-    margin-left: 100px;
-    animation: slidein2 4s infinite; 
-    z-index: -1;
-}
-
-
-#square8 {
-    width: 80px;
-    height: 30px;
-    background: yellow;
-    position: absolute;
-    margin-top: 100px;
-    margin-right: 900px;
-    animation: slidein 4s infinite; 
-    z-index: -1;
-}
-
-#square9 {
-    width: 80px;
-    height: 30px;
-    background: yellow;
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 100px;
-    animation: slidein2 4s infinite; 
-    z-index: -1;
-}
-
-
-#square10 {
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 800px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square11 {
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    position: absolute;
-    margin-top: 400px;
-    margin-right: 400px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square12 {
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    position: absolute;
-    margin-top: 550px;
-    margin-left: 200px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square13 {
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 200px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square14 {
-    width: 120px;
-    height: 100px;
-    background: lightpink;
-    position: absolute;
-    margin-top: 100px;
-    margin-right: 550px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square15 {
-    width: 40px;
-    height: 40px;
-    background: #999966;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 500px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square16 {
-    width: 40px;
-    height: 40px;
-    background: #999966;
-    position: absolute;
-    margin-top: 200px;
-    margin-right: 800px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square17 {
-    width: 40px;
-    height: 40px;
-    background: #999966;
-    position: absolute;
-    margin-top: 600px;
-    margin-right: 900px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
-
-#square18 {
-    width: 40px;
-    height: 40px;
-    background: #999966;
-    position: absolute;
-    margin-top: 500px;
-    margin-right: 100px;
-   animation: fadeIn .5s infinite;
-    z-index: -1;
-}
 
 
 
@@ -370,8 +169,8 @@ color: yellow;
 
 
 h2{
-    color: red;
-    font-family: "pinyon script", san-serif;
+    color: black;
+    font-family: "Medium", san-serif;
     font-size: 44px;
     display: flex;
     justify-content: center;
@@ -379,6 +178,7 @@ h2{
     position: absolute;
     margin-top:70px;
     z-index: 1;
+    font-weight: 300;
     
   
 
@@ -426,7 +226,7 @@ h5{
     color: black;
     font-family: "Quicksand", san-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     margin-right: 1000px;
@@ -437,12 +237,169 @@ h5{
 }
 
 
+.border {
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    border-radius: 100px; /* this doesn't work */
+    border-width: 16px;
+    border-style: solid;
+    padding: 700px;
+  }
 
 
 
+#archive1 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 500px;
+    margin-right: 100px;
+    animation: fadeIn 2s infinite;
+    z-index: -1;
+}
+
+#archive2 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 200px;
+    animation: fadeIn 2.5s infinite;
+    z-index: -1;
+}
 
 
+#archive3 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 300px;
+    margin-right: 10px;
+    animation: fadeIn 1.75s infinite;
+    z-index: -1;
+}
+
+#archive4 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 500px;
+    margin-right: 10px;
+    animation: fadeIn 3.25s infinite;
+    z-index: -1;
+}
+
+#archive5 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 600px;
+    animation: fadeIn 1.8s infinite;
+    z-index: -1;
+}
+
+#archive6 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 100px;
+    margin-right: 800px;
+    animation: fadeIn 2.6s infinite;
+    z-index: -1;
+}
+
+#archive7 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 100px;
+    margin-right: 1200px;
+    animation: fadeIn 3.2s infinite;
+    z-index: -1;
+}
 
 
+#archive8 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 1050px;
+    animation: fadeIn 2.9s infinite;
+    z-index: -1;
+}
 
+#archive9 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-left: 1050px;
+    animation: fadeIn 2.7s infinite;
+    z-index: -1;
+}
 
+#archive10 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-left: 1050px;
+    animation: fadeIn 2.6s infinite;
+    z-index: -1;
+}
+
+#archive11 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-left: 900px;
+    animation: fadeIn 1.89s infinite;
+    z-index: -1;
+}
+
+#archive12 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-left: 200px;
+   animation: fadeIn 3.3s infinite;
+    z-index: -1;
+}
+
+#archive13 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-left: 1100px;
+    animation: fadeIn 2.34s infinite;
+    z-index: -1;
+}
+
+#archive14 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    margin-top: 250px;
+    margin-right: 900px;
+    animation: fadeIn 1.75s infinite;
+    z-index: -1;
+}
+
+#icons{
+    box-shadow: 5px 5px 5px #CC0066;
+}

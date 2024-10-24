@@ -10,8 +10,7 @@ canvas{
 }
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
+   
     overflow-x: hidden;
     overflow-y: hidden;
     /* background-attachment: fixed;
@@ -272,10 +271,10 @@ h3{
     justify-content: center;
     height: 15vh;
     width: 100%;
-    background: rgb(255,255,255);
+    /* background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(81,36,237,1) 16%, rgba(48,41,235,1) 29%, rgba(31,67,199,1) 36%, rgba(30,6,230,1) 60%, rgba(119,103,223,1) 70%, rgba(88,40,224,1) 90%, rgba(255,255,255,1) 100%);
+} */
 }
-
 #nature1{
     width: 10%;
     height: 40vh;
@@ -467,3 +466,13 @@ to {
 }
 }
   
+
+#nightsky{
+    width: 10%;
+    height: 10vh;
+   
+    z-index: -1;
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+}

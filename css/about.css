@@ -13,6 +13,11 @@ style {
     object-fit: cover;
 }
 
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
 
 @font-face {
     font-family: 'Fourmi';
@@ -128,8 +133,9 @@ a:hover{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     width: 30%;
+    background-color: orange;
    
   
 }
@@ -140,7 +146,7 @@ a:hover{
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
-    height: 30vh;
+    height: 20vh;
     width: 90%;
  
  
@@ -151,20 +157,20 @@ a:hover{
 
 h1{
     font-family:"Tiltortion", san-serif;
-    font-size: 120px;
+    font-size: 200px;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-right: 500px;
+    margin-right:200px;
     letter-spacing: 15px;
     color: aqua;
 }
 
 h2{
     font-family:"Tiltortion", san-serif;
-    font-size: 120px;
+    font-size: 200px;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 180px;
     margin-left: 10px;
     margin-right: 200px;
     letter-spacing: 15px;
@@ -174,7 +180,7 @@ h2{
 
 h3{
     font-family:"Tiltortion", san-serif;
-    font-size: 120px;
+    font-size: 200px;
     position: absolute;
     margin-top: 350px;
     margin-left: 10px;
@@ -186,21 +192,80 @@ h3{
 
 h4{
     font-family:"Tiltortion", san-serif;
-    font-size: 120px;
+    font-size: 200px;
     position: absolute;
     margin-top: 500px;
     margin-bottom: 100px;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-right: 10px;
     letter-spacing: 15px;
     color: aqua;
+    z-index: 1;
+    animation: blink 1.5s step-start 0s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
-
-#image-desktop{
-    width: 60%;
-    height: 70vh;
+#computer{
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 2200px;
+    margin-right: 800px;
+    
 }
 
+#folder{
+    width:10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    z-index:100;
+}
 
+#folder2{
+    width:10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 200px;
+    margin-bottom: 0px;
+    z-index:100;
+}
+
+#folder3{
+    width:10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    z-index:100;
+}
+
+#folder4{
+    width:10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 700px;
+    margin-bottom: 100px;
+    z-index:100;
+}
