@@ -69,8 +69,9 @@ body, html {
     height: 100vh;
     align-items: center;
  justify-content: space-around;
- font-family: 'fourmi', sans-serif;
+ font-family: 'quicksand', sans-serif;
  z-index: 1;
+ font-size: 12px;
 
     
 }
@@ -83,27 +84,9 @@ a{
 }
 
 a:hover{
-font-size: 50px;
+font-size: 20px;
 box-shadow: 5px 5px 5px #CC0066;
 }
-
-
-#archive{
-    font-size: 40px;
-    
- }
- 
-
- #blog{
-   font-size: 40px;
- }
- 
-
- 
- #about{
-   font-size: 40px;
- }
- 
 
 
 
@@ -111,13 +94,14 @@ box-shadow: 5px 5px 5px #CC0066;
 .flex-container{
     display: flex;
     justify-content: center;
-    align-items: right;
+ 
     height:auto;
     width:90%;
     margin-top: auto;
     position: absolute;
     margin-left: 100px;
     margin-right: 500px;
+    
    
   
    
@@ -127,12 +111,13 @@ box-shadow: 5px 5px 5px #CC0066;
 
 #hello{
     position: absolute;
-    color: black;
+  
+    color: #CC0066;
     font-family: "Medium", san-serif;
    
     font-size: 80px;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 120px;
     
 
 }
@@ -169,9 +154,9 @@ box-shadow: 5px 5px 5px #CC0066;
 
 
 h2{
-    color: black;
+    color: #CC0066;
     font-family: "Medium", san-serif;
-    font-size: 44px;
+    font-size: 36px;
     display: flex;
     justify-content: center;
     margin-right: auto;
@@ -186,9 +171,9 @@ h2{
 
 h3{
     color: black;
-    font-family: "pinyon script", san-serif;
-    font-weight: 300;
-    font-size: 32px;
+    font-family: "quicksand", san-serif;
+    font-weight: 100;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     margin-right: 100px;
@@ -236,6 +221,18 @@ h5{
 
 }
 
+h6{
+    color: black;
+    font-family: "Quicksand", san-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 100px;
+    margin-left: 700px;
+    position: absolute;
+    margin-top: 10px;
+
+}
+
 
 .border {
     border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
@@ -261,7 +258,7 @@ h5{
     width: 10vw;
     height: 10vh;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 250px;
     margin-right: 200px;
     animation: fadeIn 2.5s infinite;
     z-index: -1;
