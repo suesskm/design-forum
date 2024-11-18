@@ -17,6 +17,10 @@ body{
     background-size: contain; */
 }
 
+style{
+    object-fit: cover;
+    object-fit: contain;
+}
 @font-face {
     font-family: 'Fourmi';
     src: url('../media/fonts/FOURMI-light2.otf') format('otf');
@@ -84,38 +88,21 @@ a:hover{
     z-index: 1;
 }
 
-#archive{
-   font-size: 32px;
-   background-color: #CCCC99;
-   padding: 10%;
-   border-radius: 30%;
-   
-}
 
 #archive:hover{
     color: hotpink
 }
 
-#blog{
-    font-size: 32px;
-    background-color: #CCCC99;
-    padding: 10%;
-    border-radius: 30%;
-}
+
 
 #blog:hover{
     color: hotpink;
 }
 
-#about{
-    font-size: 32px;
-    background-color: #CCCC99;
-    padding: 10%;
-    border-radius: 30%;
-}
+
 
 #about:hover{
-   background-color: yellow;
+    color: hotpink;
 }
 
 
@@ -131,18 +118,30 @@ a:hover{
 
 .flex-container3{
     display: flex;
-    flex-direction: column;
-    width: 10%;
-    height: 80vh;
+    flex-direction: row;
+    width: 100%;
+    height: 4vh;
     align-items: center;
  justify-content: space-around;
- font-family: 'fourmi', sans-serif;
+ font-family: 'Archivo Narrow', sans-serif;
  z-index: 1;
-/* background-color: pink; */
+background-color: #E1E1E1;
     
 }
-
-
+.bottom-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4vh;
+    align-items: center;
+ justify-content: space-around;
+ font-family: 'Archivo Narrow', sans-serif;
+ z-index: 1;
+position: fixed;
+bottom: 0px;
+margin-right: auto;
+margin-left: auto;
+background-color: #E1E1E1;}
 
 .flex-container {
     display: flex;
@@ -166,40 +165,41 @@ a:hover{
 
 
 h2{
-    font-size: 18px;
+    font-size: 24px;
     position: absolute;
-    font-family: 'wavy';
-    margin-top:0px;
-    margin-right: 700px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 100;
+    margin-top: 1000px;
+    color: #FFFC9C;
+    border: 2px solid #FFFC9C;
+    padding: 5px;
+ 
  
 }
 
 
 h1{
-    font-family:"stairs", serif;
+    font-family:"Hellplague", serif;
     font-size: 120px;
-
-  color: white;
+font-weight: 400;
+  color: #FFFC9C;
   position: absolute;
-    margin-top: 0px;
-    text-orientation: mixed;
-    
+    margin-top: 700px;
+    text-shadow: -1px -1px black;
+    letter-spacing: 5px;
  
 }
 
 
-h3{
+p{
     font-size: 24px;
     position: absolute;
-    font-family: 'squaredshadow';
-    margin-top: 0px;
-    margin-right: 700px;
-    margin-left: 0px;
-    margin-bottom: 200px;
-    animation: blink 2s linear infinite;
-    animation: scroll 2s linear infinite;
-    color: teal;
-   
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 100;
+    margin-top: 100px;
+    color: #FFFC9C;
+    text-align: left;
+ 
 }
 @keyframes blink{
   0%{opacity: 0;}

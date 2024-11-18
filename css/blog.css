@@ -59,34 +59,35 @@ a{
 }
 
 a:hover{
-   background-color: greenyellow;
+   background-color: #FFB6C1;
+   border-radius: 20%;
 }
 
 #archive{
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
  }
  
 #archive:hover{
-    font-size: 45px;
+    font-size: 35px;
     
 }
  
  #blog{
    font-size: 30px;
-   padding: 20px;
+   padding: 10px;
  }
  
 #blog:hover{
-    font-size: 45px;}
+    font-size: 35px;}
 
  #about{
    font-size: 30px;
-   padding: 20px;
+   padding: 10px;
  }
  
 #about:hover{
-    font-size: 45px;
+    font-size: 35px;
 }
  
  
@@ -156,7 +157,7 @@ p{
     height: auto;
     align-items: center;
  /* justify-content: space-around; */
- font-family: 'fourmi', sans-serif;
+ font-family: 'Tiltortion', sans-serif;
   color: #6F4E37; 
   border: 3px solid #FFB6C1; 
 }
