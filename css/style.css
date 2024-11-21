@@ -31,6 +31,15 @@ style{
   }
 
   @font-face {
+    font-family: 'FT88';
+    src: url('../media/fonts/FT88-School copy.otf') format('otf');
+    
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  @font-face {
     font-family: 'Hellplague';
     src: url('../media/fonts/hellplague.otf') format('otf');
     
@@ -68,17 +77,31 @@ style{
   
   }
 
+  @font-face {
+    font-family: 'ZTNeueRalewe-Regular';
+    src: url('../media/fonts/ZTNeueRalewe-Regular copy.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
 
-
+  @font-face {
+    font-family: 'ZTNeueRalewe-Black';
+    src: url('../media/fonts/ZTNeueRalewe-Black copy.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+  
+  }
 
 
 a{
     text-decoration: none;
-    color: black;
+  color: white;
+    
 }
 
 a:hover{
-    color: pink;
+    color: yellow;
 }
 
 #three-body{
@@ -88,22 +111,6 @@ a:hover{
     z-index: 1;
 }
 
-
-#archive:hover{
-    color: hotpink
-}
-
-
-
-#blog:hover{
-    color: hotpink;
-}
-
-
-
-#about:hover{
-    color: hotpink;
-}
 
 
 
@@ -118,14 +125,18 @@ a:hover{
 
 .flex-container3{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 5%;
     height: 4vh;
     align-items: center;
  justify-content: space-around;
- font-family: 'Archivo Narrow', sans-serif;
- z-index: 1;
-background-color: #E1E1E1;
+ z-index: 10;
+ padding: 10px;
+ font-size: 18px;
+ color: white;
+ font-family: "ZTNeueRalewe-Regular", serif;
+
+
     
 }
 .bottom-header{
@@ -169,100 +180,81 @@ h2{
     position: absolute;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 100;
-    margin-top: 1000px;
+    margin-top: 1100px;
     color: #FFFC9C;
     border: 2px solid #FFFC9C;
     padding: 5px;
+    box-shadow:10px 10px 5px #888888;
  
  
 }
 
 
 h1{
-    font-family:"Hellplague", serif;
-    font-size: 120px;
+    font-family:"Jacquarda Bastarda 9", static;
+    font-size: 160px;
 font-weight: 400;
   color: #FFFC9C;
   position: absolute;
-    margin-top: 700px;
+    margin-top: 600px;
     text-shadow: -1px -1px black;
     letter-spacing: 5px;
  
 }
 
 
+h4{
+    font-family:"Jacquarda Bastarda 9", static;
+    font-size: 160px;
+font-weight: 400;
+  color: #FFFC9C;
+  position: absolute;
+    margin-top: 870px;
+    margin-left: 650px;
+    text-shadow: -1px -1px black;
+    letter-spacing: 5px;
+ 
+}
+
+h3{
+    font-family: "pinyon script", serif;
+    font-size: 220px;
+    color: red;
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 100px;
+    margin-right: 500px;
+    text-shadow: -2px -2px black;
+    letter-spacing: 5px;
+    z-index: 1;
+
+}
+
 p{
+    font-size: 18px;
+    position: absolute;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 100;
+    margin-top: 300px;
+    color: white;
+    text-align: center;
+    padding: 100px;
+ 
+}
+
+h5{
     font-size: 24px;
     position: absolute;
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 100;
-    margin-top: 100px;
-    color: #FFFC9C;
-    text-align: left;
- 
-}
-@keyframes blink{
-  0%{opacity: 0;}
-  50%{opacity: 1;}
-  100%{opacity: 0;}
-  }
-
-  @keyframes scroll {
-    from {
-        transform: translateX(100%); /* Start position off-screen to the right */
-    }
-    to {
-        transform: translateX(-100%); /* End position off-screen to the left */
-    }
-}
-  
-  h4{
-    font-size: 18px;
-    font-family: 'wavy';
-    position: absolute;
-    margin-top: 0px;
-    margin-right: 900px;
-    margin-bottom: 600px;
-    background-color: #CC3366;
-    border-radius: 50%;
-    padding: 15px;
-    color: white;
-    animation: changeBackgroundColor 2s linear infinite;
-    
-
-}
-
-
-@keyframes changeBackgroundColor {
-    0% {
-        background-color: #CC3366;
-    }
-    25% {
-        background-color: #006633;
-    }
-    50% {
-        background-color: #FF6633;
-    }
-    }
-    
-
-
-.scrollbox{
-    display: flex;
-    background-color: lightblue;
-    width: 200px;
-    height: 300px;
-    overflow: scroll;
-    position: absolute;
     margin-top: 10px;
-    margin-left: 10px;
-    z-index: -1;
+    color: white;
+    text-align: center;
+    
 }
 
-#image-desktop{
-    width: 50%;
-    height: 60vh;
-}
+
+
 
 .flex-container2{
     display: flex;
