@@ -55,39 +55,16 @@ style {
 
 a{
     text-decoration: none;
-    color: #6F4E37;
+    color: #AFFF00;
+    
 }
 
 a:hover{
-   background-color: greenyellow;
+   color: #FFB6C1;
+  
 }
 
-#archive{
-    font-size: 30px;
-    padding: 20px;
- }
- 
-#archive:hover{
-    font-size: 45px;
-    
-}
- 
- #blog{
-   font-size: 30px;
-   padding: 20px;
- }
- 
-#blog:hover{
-    font-size: 45px;}
 
- #about{
-   font-size: 30px;
-   padding: 20px;
- }
- 
-#about:hover{
-    font-size: 45px;
-}
  
  
 
@@ -105,7 +82,7 @@ a:hover{
 h1{
     font-family: "Tiltortion", sans-serif;
     font-size: 26px;
-    color: #6F4E37;
+    color: black;
    padding-top: 2px;
    margin-bottom: -20px;
    animation: blink 1s infinite;
@@ -127,7 +104,7 @@ h1{
 h2{
     font-family: "Tiltortion", san-serif;
     font-size: 28px;
-    color: #6F4E37;
+    color: black;
    padding-top: 2px;
    margin-bottom: -20px;
  
@@ -144,31 +121,38 @@ p{
     flex-wrap: wrap;
     height: auto;
     flex-direction: row;
-    color: #6F4E37;
+    color: black;
     width: 100%;
-    
 }
 
 .flex-container3{
     display: flex;
-    flex-direction: column;
-    width: 10%;
-    height: auto;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
     align-items: center;
- /* justify-content: space-around; */
- font-family: 'fourmi', sans-serif;
-  color: #6F4E37; 
-  border: 3px solid #FFB6C1; 
+ justify-content: space-around;
+ font-family: 'Tiltortion', sans-serif;
+  color: black; 
+  background-color: black;
+  position: fixed;
+  font-size: 24px;
+ 
 }
+
+
+ 
+
+
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: left;
     flex-direction: column;
-    height: 200vh;
+    height: auto;
     width: 60%;
-    border: 3px solid #FFB6C1;
+    /* border: 3px solid #FFB6C1; */
   padding: 5px;
    
 }
@@ -190,8 +174,8 @@ p{
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 30%;
-    border: 2px solid #FFB6C1;
+    width: 40%;
+    /* border: 2px solid #FFB6C1; */
     padding: 5px;
 }
 
@@ -236,7 +220,7 @@ p{
 
 .icon {
     background-color: #FFB6C1;
-    color: #6F4E37;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -256,7 +240,7 @@ p{
 
 .icon2 {
     background-color: #FFB6C1;
-    color: #6F4E37;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -274,7 +258,7 @@ p{
 
     .icon3 {
         background-color: #FFB6C1;
-        color: #6F4E37;
+        color: black;
         padding: 10px 20px;
         border: none;
         border-radius: 4px;
@@ -293,7 +277,7 @@ p{
 
         .icon4 {
             background-color: #FFB6C1;
-            color: #6F4E37;
+            color: black;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;

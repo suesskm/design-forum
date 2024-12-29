@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="../css/about.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,14 +44,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Major+Mono+Display&family=Rubik+Mono+One&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Major+Mono+Display&family=Rubik+Mono+One&family=Silkscreen:wght@400;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
    <script type="importmap">
     {
       "imports": {
@@ -64,8 +67,8 @@
 <body>
   <style>
     body {
-      background-color: lightpink;
-      background-image: url('../media/images/pink-colorburn.png');
+      /* background-color: lightpink; */
+      background-image: url('../media/images/about-bg.png');
     }
     </style> 
 
@@ -75,11 +78,7 @@
 
 
 <div class="parent-container">
-
-
-
-
-   
+     
   <div class="flex-container3">
     <a href="../html/archive.html" id="archive">archive</a>
   
@@ -89,8 +88,176 @@
   
     
   </div> 
+<img id="kiwi" src="../media/images/kiwi.png" alt="kiwi">
+<img id="strawberry" src="../media/images/strawberry.png" alt="kiwi">
+<img id="orange" src="../media/images/orange.png" alt="kiwi">
+<img id="lemon" src="../media/images/lemon.png" alt="kiwi">
+<div id="square1"></div>
+<div id="square2"></div>
+<div id="square3"></div>
+<div id="square4"></div>
+<div id="square5"></div>
+<!-- <img id="shape" src="../media/images/shape.png" alt="shape"> -->
+
+
+<div id="audio-player-container">
+  <button id="play-icon"></button>
+  <span id="current-time" class="time">0:00</span>
+  <input type="range" id="seek-slider" max="100" value="0">
+  <span id="duration" class="time">0:00</span>
+  <input type="range" id="volume-slider" max="100" value="100">
+</div>
+
+
+    <!-- Here we are using attributes like
+        cellspacing and cellpadding -->
+ 
+    <!-- The purpose of the cellpadding is 
+        the space that a user want between
+        the border of cell and its contents-->
+ 
+    <!-- cellspacing is used to specify the 
+        space between the cell and its contents -->
+        <!-- <h3 align="center" style="color: orange;">
+          January 2021
+      </h3> -->
+      <br />
+       
+      <table bgcolor="lightgrey" align="center"
+          cellspacing="21" cellpadding="21">
+           
+          <!-- The tr tag is used to enter 
+              rows in the table -->
    
-<div class="flex-container2">
+          <!-- It is used to give the heading to the
+              table. We can give the heading to the 
+              top and bottom of the table -->
+   
+          <caption align="top">
+              <!-- Here we have used the attribute 
+                  that is style and we have colored 
+                  the sentence to make it better 
+                  depending on the web page-->
+          </caption>
+   
+          <!-- Here th stands for the heading of the
+              table that comes in the first row-->
+   
+          <!-- The text in this table header tag will 
+              appear as bold and is center aligned-->
+   
+          <thead>
+              <tr>
+                  <!-- Here we have applied inline style 
+                       to make it more attractive-->
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>sat</th>
+              </tr>
+          </thead>
+           
+          <tbody>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+              </tr>
+              <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+              </tr>
+              <tr>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+              </tr>
+              <tr>
+                  <td>31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="scrollbox">
+
+    <div class="container">
+      <!-- <div class="image">
+        <img src="../media/images/desktop.jpg">
+      </div> -->
+      <h1>About Us</h1>
+      <div class="text">
+       
+        Welcome to the Graphic Design Forum Blog, a vibrant hub for designers, creatives, and enthusiasts to explore, learn, and connect! Here, we celebrate the artistry, innovation, and impact of graphic design across industries and mediums.
+
+          Our blog is dedicated to providing valuable insights, inspiring stories, and practical resources for designers at every level. From industry trends and design tips to deep dives into creative techniques, we aim to spark your imagination and elevate your craft.
+          
+          Whether you’re a seasoned professional, a curious beginner, or someone who simply appreciates the beauty of design, you’ll find a community here that shares your passion. Join us as we explore the limitless possibilities of graphic design and celebrate the creativity that shapes our world.
+          
+          Let’s design, discuss, and discover together!
+      </div>
+    </div>
+ 
+ 
+  
+  </div>
+
+
+
+   
+<!-- <div class="flex-container2">
   <h1>ABOUT US</h1>
   <h2>ABOUT US</h2>
   <h3>ABOUT US</h3>
@@ -111,17 +278,17 @@
   <img src="../media/images/folder.png" alt="folder" width="80" height="60">
 </div>
 
-</div>
-
-<!-- <div class="flex-container">
-<div id="computer">
-  <img src="../media/images/computer-mu.png" alt="computer">
-</div>
-<div id="folder">
-  <img src="../media/images/folder.png" alt="folder" width="80" height="60">
-</div>
-
 </div> -->
+
+<div class="bottom-header">
+  <a href="../html/archive.html" id="archive">archive</a>
+
+  <a href="../index.html" id="about">home</a>
+
+  <a href="../html/blog.html" id="blog">blog</a>
+
+  
+</div> 
 
 </div>
 </body>
