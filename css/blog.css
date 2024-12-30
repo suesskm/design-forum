@@ -66,7 +66,9 @@ a:hover{
 
 
  
- 
+ #computer{
+    padding: 10px;
+ }
 
 
 #hello{
@@ -127,16 +129,16 @@ p{
 
 .flex-container3{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 5vh;
+    flex-direction: column;
+    width: 10%;
+    height: 10vh;
     align-items: center;
  justify-content: space-around;
  font-family: 'Tiltortion', sans-serif;
   color: black; 
   background-color: black;
   position: fixed;
-  font-size: 24px;
+  font-size: 28px;
  
 }
 
@@ -187,6 +189,7 @@ p{
     height: 15vh;
     font-family: "Amakan-Strips", san-serif;
     justify-content: space-around;
+   margin-top: 18px;
 }
 
 .header2{
@@ -194,7 +197,7 @@ p{
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-    height: 15vh;
+    height: 25vh;
    padding: 20px;
 }
 
@@ -297,17 +300,17 @@ p{
 
 @keyframes colorChange {
     0% {
-        color: #FFB6C1; /* Start with initial color */
+        color: #AFFF00;
     }
 
     /* 25%{
         color: #6F4E37;  } */
     50% {
-       color: #FFB6C1;
+       color: black
 
     }
     100% {
-        color: #6F4E37; /* Change back to initial color */
+        color: #AFFF00;
     }
 }
 
@@ -329,7 +332,7 @@ p{
     width: 100px;
     height:300px;
     /* background-color: #555; */
-    color: #fff;
+    color: #AFFF00;
     text-align: center;
     border-radius: 6px;
     /* padding: 8px 0; */
@@ -340,8 +343,9 @@ p{
     box-shadow: #9c4a70;
   }  
   
-  #popup-03{
+  #popup-05{
       margin-top: 10px;
+      color: #AFFF00;
   }
   
   
@@ -369,7 +373,7 @@ p{
 
   #myButton {
     background-color: #FFB6C1;
-    color: #fff;
+    color: #AFFF00;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -440,7 +444,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #6F4E37;
+    background-color: #AFFF00;
     color: #FFB6C1;
     padding: 10px 20px;
     border: 2px solid #FFB6C1;
@@ -456,7 +460,7 @@ input[type="submit"]:hover {
 /* Style message */
 .message {
     font-size: 14px;
-    color: #6F4E37;;
+    color: #AFFF00;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -509,10 +513,81 @@ h3{
     position: absolute;
     font-family: "Amakan-Strips", san-serif;
     font-size: 28px;
-    top: 42%;
+    top: 45%;
     left: 62%;
-    color: #6F4E37;
+    color: #AFFF00;;
     background-color: #FFB6C1;
-    animation: colorChange .5s infinite;
+    /* animation: colorChange .5s infinite; */
    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    #hello {
+        font-size: 50px; /* Reduce large text */
+    }
+
+    #title {
+        font-size: 80px; /* Adjust title size */
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    /* Make containers more responsive */
+    .parent-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+    }
+
+    .flex-container, .flex-container2, .flex-container3 {
+        width: 100%; /* Adjust width for smaller screens */
+        height: auto;
+        padding: 10px;
+    }
+
+    .mini-header, .header1, .header2 {
+        flex-direction: column;
+        height: auto; /* Adjust height */
+    }
+
+    /* Style buttons for mobile */
+    .icon, .icon2, .icon3, .icon4 {
+        top: auto; 
+        left: auto; 
+        position: relative; /* Place buttons inline */
+        transform: none; 
+        margin: 10px auto;
+    }
+
+    #myButton {
+        top: auto;
+        left: auto;
+        position: relative;
+        transform: none;
+        margin: 10px auto;
+    }
+
+    /* Adjust form container */
+    #form-container {
+        width: 90%; /* Reduce width */
+        padding: 10px;
+    }
+
+    /* Ensure smooth scrolling for text */
+    .scrollbar {
+        overflow-x: auto;
+        width: 100%; /* Expand to screen width */
+    }
 }
