@@ -526,33 +526,222 @@ audio{
     z-index: 0;
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 760px) {
+
+style{
+    object-fit: cover;
+    object-fit: contain;
+    object-position: 0;
+}
+
+    body, html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+
     h1 {
-        font-size: 60px;
-        letter-spacing: 5px;
+        font-size: 50px;
+        letter-spacing: 3px;
+        text-align: center;
+        margin: 20px 0;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 28px;
+        text-align: center;
+        margin: 10px 0;
     }
 
-    .parent-container, .flex-container3, .bottom-header {
+    h3, h4 {
+        font-size: 60px;
+        text-align: center;
+        margin: 30px 0;
+        position: static;
+    }
+
+    .parent-container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        text-align: center;
     }
 
-    .flex-container, .flex-container2 {
+    .flex-container,
+    .flex-container2 {
+        width: 90%;
+        max-width: 500px;
+        margin: 15px 0;
+    }
+
+    .flex-container3,
+    .bottom-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+        
+    }
+
+    .flex-container3{
         width: 100%;
+        position: fixed top;
     }
 
     .scrollbox {
         width: 90%;
+        height: 30vh;
+        margin: 20px auto;
+        box-shadow: none;
+        overflow-y: scroll;
+    }
+
+    #kiwi,
+    #strawberry,
+    #orange,
+    #lemon {
+        width: 50%;
+        max-width: 200px;
         height: auto;
+        margin: 20px 0;
+        position: static;
+        z-index: 1;
+    }
+
+    #square1,
+    #square2,
+    #square3,
+    #square4,
+    #square5 {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0;
+        position: static;
+    }
+
+    #text {
+        font-size: 16px;
+        margin: 15px 20px;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    table {
+        width: 90%;
         margin: 20px auto;
     }
 
-    #kiwi, #strawberry, #orange, #lemon {
-        width: 20%;
-        height: auto;
-        margin: 10px auto;
+    audio {
+        width: 90%;
+        max-width: 400px;
+        margin: 30px auto;
+        position: static;
+        margin-top: 0;
     }
+
+    canvas {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    a:hover {
+        padding: 8px;
+    }
+
+    /* Centering absolute positioned elements */
+    #computer, 
+    #folder, 
+    #folder2, 
+    #folder3, 
+    #folder4 {
+        position: static;
+        width: 80%;
+        max-width: 300px;
+        margin: 15px auto;
+    }
+
+
+
+  /* Adjust font sizes for smaller screens */
+  #hello {
+    font-size: 80px; /* Reduce large text */
 }
+
+#title {
+    font-size: 80px; /* Adjust title size */
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* Make containers more responsive */
+
+
+.parent-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+}
+
+.flex-container, .flex-container2, .flex-container3 {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto;
+    padding: 10px;
+}
+
+.mini-header, .header1, .header2 {
+    flex-direction: column;
+    height: auto; /* Adjust height */
+}
+
+/* Style buttons for mobile */
+.icon, .icon2, .icon3, .icon4 {
+    top: auto; 
+    left: auto; 
+    position: relative; /* Place buttons inline */
+    transform: none; 
+    margin: 10px auto;
+}
+
+#myButton {
+    top: auto;
+    left: auto;
+    position: relative;
+    transform: none;
+    margin: 10px auto;
+}
+
+/* Adjust form container */
+#form-container {
+    width: 90%; /* Reduce width */
+    padding: 10px;
+}
+
+/* Ensure smooth scrolling for text */
+.scrollbar {
+    overflow-x: auto;
+    width: 100%; /* Expand to screen width */
+}
+}
+
+
+

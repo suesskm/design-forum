@@ -435,3 +435,71 @@ h6{
 #icons{
   box-shadow: 5px 5px 5px #CC0066;
 }
+
+
+
+/*Media Queries*/
+/* Mobile Styles (Up to 768px width) */
+@media (max-width: 768px) {
+  #three-body {
+    display: none;
+  }
+
+  .parent-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+}
+
+.flex-container, .flex-container2, .flex-container3 {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto;
+    padding: 10px;
+}
+
+
+  #hello {
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  h2, h3, h5, h7 {
+    font-size: 20px;
+    margin: 20px auto;
+    position: static;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  h4, h6 {
+    font-size: 14px;
+    margin: 10px auto;
+    text-align: center;
+    animation: none;
+  }
+
+  [id^="archive"] {
+    width: 20vw;
+    height: 10vh;
+    margin: 20px auto;
+    position: relative;
+    animation: fadeIn 2s ease-in-out infinite;
+  }
+
+  .border {
+    padding: 30px;
+    border-width: 8px;
+  }
+
+  #icons {
+    margin: 20px auto;
+    box-shadow: none;
+
+  }
+
+  a:hover {
+    font-size: 18px;
+    box-shadow: none;
+  }
+}

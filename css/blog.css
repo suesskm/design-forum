@@ -523,6 +523,11 @@ h3{
 
 
 
+
+
+
+/* Media queries */
+
 @media screen and (max-width: 768px) {
     /* Adjust font sizes for smaller screens */
     #hello {
@@ -546,6 +551,8 @@ h3{
     }
 
     /* Make containers more responsive */
+
+  
     .parent-container {
         flex-direction: column; /* Stack items vertically */
         padding: 10px;
